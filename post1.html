@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exciting New Developments in Web Design</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Personal Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="archive.html">Archive</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <article>
+      <h1>My Internship in Crete, Greece</h1>
+      <p class="date">Published on: August 8, 2024</p>
+      <div class="content">
+        <p>Web design is evolving rapidly. In this post, we explore the latest trends and what they mean for the future of web development...</p>
+        <!-- Full post content goes here -->
+      </div>
+      <section class="comments">
+        <h2>Comments</h2>
+        <form action="submit_comment.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" required></textarea>
+          <button type="submit">Submit Comment</button>
+        </form>
+        <!-- Display existing comments here -->
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2024 Dennis Ludley</p>
+  </footer>
+</body>
+</html>
