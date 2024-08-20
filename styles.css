@@ -1,229 +1,183 @@
 /* Global Styles */
 body {
-  font-family: 'Arial', sans-serif; /* Sets the font for the entire page */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  color: #333; /* Sets the text color */
-  background: #f4f4f4; /* Sets the background color */
-  line-height: 1.6; /* Sets the line height for better readability */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f4f4f4;
+  line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-  background: #222; /* Sets the background color of the header */
-  color: #fff; /* Sets the text color in the header */
-  padding: 1rem; /* Adds padding inside the header */
+  background: #222;
+  color: #fff;
+  padding: 1rem;
 }
 
 header .container {
-  width: 90%; /* Sets the width of the container to 90% of the parent */
-  max-width: 1200px; /* Sets a maximum width for the container */
-  margin: 0 auto; /* Centers the container horizontally */
-  display: flex; /* Uses flexbox layout */
-  flex-direction: column; /* Stacks header contents vertically */
-  align-items: center; /* Centers header contents horizontally */
-  text-align: center; /* Centers text inside the header */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
-  margin: 0; /* Removes default margin from the header */
-  font-size: 1.5rem; /* Sets the font size for the header */
-}
-
-/* Button Styles */
-.menu-toggle {
-  display: none; /* Hides the button by default */
-  background-color: #444; /* Sets the background color of the button */
-  color: white; /* Sets the text color of the button */
-  border: none; /* Removes border from the button */
-  padding: 10px; /* Adds padding inside the button */
-  font-size: 1rem; /* Sets the font size of the button */
-  cursor: pointer; /* Changes cursor to pointer on hover */
-  text-align: center; /* Centers text inside the button */
-  border-radius: 5px; /* Rounds the corners of the button */
-  margin-bottom: 1rem; /* Adds space below the button */
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 /* Navigation Styles */
 nav {
-  width: 100%; /* Sets the width of the navigation to 100% of the parent */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 nav ul {
-  list-style: none; /* Removes bullet points from the list */
-  margin: 0; /* Removes default margin from the list */
-  padding: 0; /* Removes default padding from the list */
-  display: flex; /* Uses flexbox layout */
-  justify-content: center; /* Centers list items horizontally */
-  flex-direction: row; /* Aligns items horizontally */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center menu items horizontally */
 }
 
 nav ul li {
-  margin-left: 20px; /* Adds space between list items */
+  margin: 10px 0;
 }
 
 nav ul li a {
-  color: #fff; /* Sets the text color of the links */
-  text-decoration: none; /* Removes underline from the links */
-  font-weight: bold; /* Makes the text bold */
-  padding: 5px 10px; /* Adds padding inside the links */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #444;
+  border-radius: 5px;
 }
 
 nav ul li a:hover {
-  background-color: #444; /* Changes background color on hover */
-  border-radius: 5px; /* Rounds the corners of the hovered links */
+  background-color: #555;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center; /* Center text inside button */
+    margin: 0 auto; /* Center button */
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+    align-items: center; /* Center menu items horizontally */
+  }
+
+  nav ul.showing {
+    display: flex;
+  }
 }
 
 /* Main Content Styles */
 main.container {
-  width: 90%; /* Sets the width of the main container to 90% of the parent */
-  max-width: 1200px; /* Sets a maximum width for the main container */
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 2rem 0; /* Adds padding top and bottom */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 article {
-  background: #fff; /* Sets the background color of articles */
-  padding: 1.5rem; /* Adds padding inside the articles */
-  margin-bottom: 1.5rem; /* Adds space below each article */
-  border-radius: 10px; /* Rounds the corners of the articles */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow to the articles */
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 article h2 a {
-  color: #333; /* Sets the text color of article titles */
-  text-decoration: none; /* Removes underline from titles */
-  font-size: 1.5rem; /* Sets the font size for article titles */
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 article h2 a:hover {
-  text-decoration: underline; /* Underlines titles on hover */
+  text-decoration: underline;
 }
 
 .excerpt {
-  color: #555; /* Sets the color for excerpt text */
-  margin-top: 0.5rem; /* Adds space above the excerpt text */
+  color: #555;
+  margin-top: 0.5rem;
 }
 
 .date {
-  font-size: 0.9rem; /* Sets the font size for date text */
-  color: #777; /* Sets the color for date text */
-}
-
-#map {
-  height: 500px; /* Sets the height of the map */
-  width: 100%; /* Sets the width of the map */
-  border: 2px solid #ddd; /* Adds a border around the map */
-  border-radius: 5px; /* Rounds the corners of the map */
-  margin: 1.5rem 0; /* Adds space above and below the map */
+  font-size: 0.9rem;
+  color: #777;
 }
 
 /* Footer Styles */
 footer {
-  background: #222; /* Sets the background color of the footer */
-  color: #fff; /* Sets the text color in the footer */
-  text-align: center; /* Centers text inside the footer */
-  padding: 1.5rem 0; /* Adds padding top and bottom */
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 
 footer p {
-  margin: 0; /* Removes default margin from footer text */
-  font-size: 0.9rem; /* Sets the font size of footer text */
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 /* Contact Form Styles */
 .contact-form {
-  background: #fff; /* Sets the background color of the contact form */
-  padding: 1.5rem; /* Adds padding inside the form */
-  margin-top: 2rem; /* Adds space above the form */
-  border-radius: 10px; /* Rounds the corners of the form */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow to the form */
+  background: #fff;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
-  display: block; /* Makes labels block elements */
-  margin-bottom: 0.5rem; /* Adds space below labels */
-  font-weight: bold; /* Makes label text bold */
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%; /* Sets the width of inputs and textareas to 100% */
-  padding: 0.75rem; /* Adds padding inside inputs and textareas */
-  margin-bottom: 1.5rem; /* Adds space below inputs and textareas */
-  border: 1px solid #ddd; /* Adds a border around inputs and textareas */
-  border-radius: 5px; /* Rounds the corners of inputs and textareas */
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .contact-form button {
-  padding: 0.75rem 1.5rem; /* Adds padding inside the button */
-  background: #333; /* Sets the background color of the button */
-  color: #fff; /* Sets the text color of the button */
-  border: none; /* Removes border from the button */
-  border-radius: 5px; /* Rounds the corners of the button */
-  cursor: pointer; /* Changes cursor to pointer on hover */
+  padding: 0.75rem 1.5rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .contact-form button:hover {
-  background: #555; /* Changes background color on hover */
+  background: #555;
 }
 
-/* Hamburger Menu for Mobile */
-@media (max-width: 768px) {
-  header .container {
-    flex-direction: column; /* Stacks header contents vertically on mobile */
-    align-items: center; /* Centers header contents horizontally on mobile */
-    text-align: center; /* Centers text inside the header on mobile */
-  }
-
-  .menu-toggle {
-    display: block; /* Shows the menu button on mobile */
-  }
-
-  nav {
-    text-align: center; /* Ensures text alignment for mobile */
-  }
-
-  nav ul {
-    flex-direction: column; /* Stacks navigation items vertically on mobile */
-    display: none; /* Hides navigation items by default */
-    width: 100%; /* Sets navigation width to 100% */
-    background-color: #222; /* Sets background color of the navigation */
-    padding: 10px 0; /* Adds padding top and bottom */
-    align-items: center; /* Centers items horizontally */
-  }
-
-  nav ul.showing {
-    display: flex; /* Displays navigation items when the menu is toggled */
-  }
-
-  nav ul li {
-    margin: 10px 0; /* Adds space between navigation items on mobile */
-  }
-
-  nav ul li a {
-    width: 100%; /* Sets link width to 100% */
-    padding: 10px; /* Adds padding inside the links */
-    background-color: #444; /* Sets background color of links on mobile */
-    border-radius: 5px; /* Rounds the corners of links */
-    text-align: center; /* Centers text inside the links */
-  }
-
-  main.container {
-    width: 95%; /* Sets width of the main container to 95% on mobile */
-    padding: 1rem 0; /* Adds padding top and bottom on mobile */
-  }
-
-  article {
-    padding: 1rem; /* Adds padding inside articles on mobile */
-    margin-bottom: 1rem; /* Adds space below articles on mobile */
-  }
-
-  #map {
-    height: 300px; /* Sets height of the map on mobile */
-  }
-
-  footer {
-    padding: 1rem; /* Adds padding inside the footer on mobile */
-  }
-}
