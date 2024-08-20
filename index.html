@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Blog</title>
+  <title>My Personal Blog - Dennis Ludley</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>My Personal Blog </h1>
+      <h1>My Personal Blog - Dennis Ludley</h1>
       <button class="menu-toggle">Menu</button>
       <nav>
         <ul>
@@ -35,11 +38,12 @@
         <p class="date">Published on: July 20, 2024</p>
       </article>
     </section>
-    <div id="map"></div> <!-- Map container -->
+    <div id="map" style="height: 500px;"></div> <!-- Map container with a set height -->
   </main>
   <footer>
     <p>&copy; 2024 Dennis Ludley</p>
   </footer>
+  <script src="maps.js"></script> <!-- Include the maps.js file -->
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav ul');
@@ -50,5 +54,3 @@
   </script>
 </body>
 </html>
-
-
