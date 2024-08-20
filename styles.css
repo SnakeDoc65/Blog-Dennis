@@ -4,6 +4,7 @@ body {
   padding: 0;
   color: #333;
   background: #f4f4f4;
+  line-height: 1.6;
 }
 
 header {
@@ -13,25 +14,29 @@ header {
 }
 
 header .container {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Added for better mobile handling */
 }
 
 header h1 {
   margin: 0;
+  font-size: 1.8rem; /* Slightly larger font size */
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Wrap nav items on smaller screens */
 }
 
 nav ul li {
-  display: inline;
   margin-left: 20px;
 }
 
@@ -39,29 +44,34 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #444;
+  border-radius: 5px; /* Add a background on hover */
+  text-decoration: none;
 }
 
 main.container {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
 }
 
 article {
   background: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow for better effect */
 }
 
 article h2 a {
   color: #333;
   text-decoration: none;
+  font-size: 1.5rem; /* Larger and more readable titles */
 }
 
 article h2 a:hover {
@@ -70,6 +80,7 @@ article h2 a:hover {
 
 .excerpt {
   color: #555;
+  margin-top: 0.5rem; /* Added margin for better readability */
 }
 
 .date {
@@ -78,30 +89,31 @@ article h2 a:hover {
 }
 
 #map {
-  height: 500px; /* Adjust height as needed */
+  height: 500px; 
   width: 100%;
   border: 2px solid #ddd;
   border-radius: 5px;
-  margin: 1rem 0;
+  margin: 1.5rem 0; /* Increased margin */
 }
 
 footer {
   background: #222;
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 0; /* Increased padding */
 }
 
 footer p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .contact-form {
   background: #fff;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
@@ -113,14 +125,14 @@ footer p {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+  padding: 0.75rem; /* Increased padding */
+  margin-bottom: 1.5rem;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
 .contact-form button {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   background: #333;
   color: #fff;
   border: none;
@@ -130,4 +142,47 @@ footer p {
 
 .contact-form button:hover {
   background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  main.container {
+    width: 95%;
+    padding: 1rem 0;
+  }
+
+  article {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #map {
+    height: 300px; /* Reduced height for mobile */
+  }
+
+  footer {
+    padding: 1rem;
+  }
 }
