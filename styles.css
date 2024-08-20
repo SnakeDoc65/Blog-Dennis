@@ -20,9 +20,10 @@ header .container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Zentriert die Inhalte horizontal */
   align-items: center;
   flex-wrap: wrap;
+  text-align: center; /* Zentriert den Text */
 }
 
 header h1 {
@@ -30,12 +31,31 @@ header h1 {
   font-size: 1.5rem;
 }
 
+/* Button Styles */
+.menu-toggle {
+  display: none;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 1rem; /* Abstand zwischen Button und Navigation */
+}
+
 /* Navigation Styles */
+nav {
+  width: 100%;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center; /* Zentriert die Navigation horizontal */
   flex-wrap: wrap;
 }
 
@@ -150,20 +170,14 @@ footer p {
 }
 
 /* Hamburger Menu for Mobile */
-.menu-toggle {
-  display: none;
-}
-
 @media (max-width: 768px) {
+  header .container {
+    flex-direction: column; /* Stapelt die Inhalte untereinander */
+    text-align: center;
+  }
+
   .menu-toggle {
     display: block;
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: left;
   }
 
   nav ul {
