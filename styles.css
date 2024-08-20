@@ -20,9 +20,9 @@ header .container {
   max-width: 1200px; /* Sets a maximum width for the container */
   margin: 0 auto; /* Centers the container horizontally */
   display: flex; /* Uses flexbox layout */
-  flex-direction: column; /* Stacks children elements vertically */
-  align-items: center; /* Centers children elements horizontally */
-  text-align: center; /* Centers text inside the container */
+  flex-direction: column; /* Stacks header contents vertically */
+  align-items: center; /* Centers header contents horizontally */
+  text-align: center; /* Centers text inside the header */
 }
 
 header h1 {
@@ -55,7 +55,7 @@ nav ul {
   padding: 0; /* Removes default padding from the list */
   display: flex; /* Uses flexbox layout */
   justify-content: center; /* Centers list items horizontally */
-  flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+  flex-direction: row; /* Aligns items horizontally */
 }
 
 nav ul li {
@@ -180,12 +180,17 @@ footer p {
     display: block; /* Shows the menu button on mobile */
   }
 
+  nav {
+    text-align: center; /* Ensures text alignment for mobile */
+  }
+
   nav ul {
     flex-direction: column; /* Stacks navigation items vertically on mobile */
     display: none; /* Hides navigation items by default */
     width: 100%; /* Sets navigation width to 100% */
     background-color: #222; /* Sets background color of the navigation */
     padding: 10px 0; /* Adds padding top and bottom */
+    align-items: center; /* Centers items horizontally */
   }
 
   nav ul.showing {
@@ -201,6 +206,7 @@ footer p {
     padding: 10px; /* Adds padding inside the links */
     background-color: #444; /* Sets background color of links on mobile */
     border-radius: 5px; /* Rounds the corners of links */
+    text-align: center; /* Centers text inside the links */
   }
 
   main.container {
@@ -214,11 +220,10 @@ footer p {
   }
 
   #map {
-    height: 300px; /* Reduces height of the map on mobile */
+    height: 300px; /* Sets height of the map on mobile */
   }
 
   footer {
-    padding: 1rem; /* Adds padding top and bottom in the footer on mobile */
+    padding: 1rem; /* Adds padding inside the footer on mobile */
   }
 }
-
