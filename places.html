@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="maps.js" defer></script>
+  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+  <script src="maps.js" defer></script> <!-- Include the maps.js file -->
 </head>
 <body>
   <header>
@@ -26,7 +27,7 @@
   </header>
   <main class="container">
     <h2>Places Where I've Been</h2>
-    <div id="map"></div>
+    <div id="map" style="height: 500px;"></div> <!-- Map container with a set height -->
   </main>
   <footer>
     <p>&copy; 2024 Dennis Ludley</p>
