@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Archive</title>
+  <title>Archive - My Personal Blog</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>My Personal Blog</h1>
+      <h1>My Personal Blog - Dennis Ludley</h1>
+      <button class="menu-toggle">Menu</button>
       <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="archive.html">Archive</a></li>
-            <li><a href="places.html">Places Where I've Been</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="places.html">Places Where I've Been</a></li>
         </ul>
       </nav>
     </div>
@@ -29,7 +30,15 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 My Personal Blog</p>
+    <p>&copy; 2024 Dennis Ludley</p>
   </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('showing');
+    });
+  </script>
 </body>
 </html>
