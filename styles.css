@@ -29,17 +29,12 @@ header {
   align-items: center;
 }
 
-/* Title styling */
 h1 {
   margin: 0;
   font-size: 1.5em;
 }
 
 /* Navigation styling */
-nav {
-  position: relative;
-}
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -60,7 +55,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Mobile menu toggle styling */
 .menu-toggle {
   display: none;
   background: #007bff;
@@ -75,13 +69,12 @@ nav ul li a:hover {
   nav ul {
     display: none;
     flex-direction: column;
-    width: 100%;
   }
-
+  
   nav ul.showing {
     display: flex;
   }
-
+  
   .menu-toggle {
     display: block;
   }
@@ -111,8 +104,7 @@ h2 {
   font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ddd;
