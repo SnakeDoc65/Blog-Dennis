@@ -42,24 +42,21 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row; /* Horizontal layout on larger screens */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  flex-wrap: wrap; /* Wrap items if necessary */
+  flex-direction: column;
+  align-items: center; /* Center menu items horizontally */
 }
 
 nav ul li {
-  margin: 0 10px; /* Horizontal spacing between items */
+  margin: 10px 0;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 10px 20px;
   background-color: #444;
   border-radius: 5px;
-  text-align: center; /* Center text inside links */
 }
 
 nav ul li a:hover {
@@ -81,29 +78,20 @@ nav ul li a:hover {
     font-size: 1rem;
     cursor: pointer;
     text-align: center; /* Center text inside button */
-    width: 100%; /* Make button full width */
-    margin-bottom: 10px; /* Space below button */
+    margin: 0 auto; /* Center button */
   }
 
   nav ul {
-    display: none; /* Hide menu items by default */
-    flex-direction: column; /* Stack menu items vertically */
-    width: 100%; /* Make menu full width */
+    flex-direction: column;
+    display: none;
+    width: 100%;
     background-color: #222;
     padding: 10px 0;
     align-items: center; /* Center menu items horizontally */
-    position: absolute; /* Position menu absolutely */
-    top: 60px; /* Adjust based on header height */
-    left: 0;
-    z-index: 1000; /* Ensure menu appears above other content */
   }
 
   nav ul.showing {
-    display: flex; /* Show menu items when toggled */
-  }
-
-  nav ul li {
-    margin: 10px 0; /* Vertical spacing between items */
+    display: flex;
   }
 }
 
@@ -192,6 +180,3 @@ footer p {
 .contact-form button:hover {
   background: #555;
 }
-
-
-
