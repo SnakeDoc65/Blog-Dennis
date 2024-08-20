@@ -3,21 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Blog - Dennis Ludley</title>
+  <title>My Personal Blog</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-  <style>
-    #map {
-      height: 500px; /* Adjust the height of the map container */
-      width: 100%; /* Full width of the container */
-    }
-  </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>My Personal Blog - Dennis Ludley</h1>
+      <h1>My Personal Blog </h1>
       <button class="menu-toggle">Menu</button>
       <nav>
         <ul>
@@ -48,9 +40,15 @@
   <footer>
     <p>&copy; 2024 Dennis Ludley</p>
   </footer>
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-  <script src="maps.js"></script> <!-- Link to your maps.js file -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('showing');
+    });
+  </script>
 </body>
 </html>
+
 
