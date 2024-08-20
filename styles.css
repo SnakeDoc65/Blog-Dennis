@@ -57,6 +57,7 @@ nav ul li a {
   padding: 10px 20px; /* Adjust padding as needed */
   background-color: #444;
   border-radius: 5px;
+  text-align: center; /* Center text inside links */
 }
 
 nav ul li a:hover {
@@ -79,6 +80,7 @@ nav ul li a:hover {
     cursor: pointer;
     text-align: center; /* Center text inside button */
     margin: 0 auto; /* Center button */
+    width: 100%;
   }
 
   nav ul {
@@ -180,4 +182,5 @@ footer p {
 .contact-form button:hover {
   background: #555;
 }
+
 
