@@ -1,223 +1,224 @@
 /* Global Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background: #f4f4f4;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif; /* Sets the font for the entire page */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  color: #333; /* Sets the text color */
+  background: #f4f4f4; /* Sets the background color */
+  line-height: 1.6; /* Sets the line height for better readability */
 }
 
 /* Header Styles */
 header {
-  background: #222;
-  color: #fff;
-  padding: 1rem;
+  background: #222; /* Sets the background color of the header */
+  color: #fff; /* Sets the text color in the header */
+  padding: 1rem; /* Adds padding inside the header */
 }
 
 header .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center; /* Zentriert die Inhalte horizontal */
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center; /* Zentriert den Text */
+  width: 90%; /* Sets the width of the container to 90% of the parent */
+  max-width: 1200px; /* Sets a maximum width for the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  display: flex; /* Uses flexbox layout */
+  flex-direction: column; /* Stacks children elements vertically */
+  align-items: center; /* Centers children elements horizontally */
+  text-align: center; /* Centers text inside the container */
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.5rem;
+  margin: 0; /* Removes default margin from the header */
+  font-size: 1.5rem; /* Sets the font size for the header */
 }
 
 /* Button Styles */
 .menu-toggle {
-  display: none;
-  background-color: #444;
-  color: white;
-  border: none;
-  padding: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 1rem; /* Abstand zwischen Button und Navigation */
+  display: none; /* Hides the button by default */
+  background-color: #444; /* Sets the background color of the button */
+  color: white; /* Sets the text color of the button */
+  border: none; /* Removes border from the button */
+  padding: 10px; /* Adds padding inside the button */
+  font-size: 1rem; /* Sets the font size of the button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  text-align: center; /* Centers text inside the button */
+  border-radius: 5px; /* Rounds the corners of the button */
+  margin-bottom: 1rem; /* Adds space below the button */
 }
 
 /* Navigation Styles */
 nav {
-  width: 100%;
+  width: 100%; /* Sets the width of the navigation to 100% of the parent */
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center; /* Zentriert die Navigation horizontal */
-  flex-wrap: wrap;
+  list-style: none; /* Removes bullet points from the list */
+  margin: 0; /* Removes default margin from the list */
+  padding: 0; /* Removes default padding from the list */
+  display: flex; /* Uses flexbox layout */
+  justify-content: center; /* Centers list items horizontally */
+  flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 20px; /* Adds space between list items */
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
+  color: #fff; /* Sets the text color of the links */
+  text-decoration: none; /* Removes underline from the links */
+  font-weight: bold; /* Makes the text bold */
+  padding: 5px 10px; /* Adds padding inside the links */
 }
 
 nav ul li a:hover {
-  background-color: #444;
-  border-radius: 5px;
+  background-color: #444; /* Changes background color on hover */
+  border-radius: 5px; /* Rounds the corners of the hovered links */
 }
 
 /* Main Content Styles */
 main.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 0;
+  width: 90%; /* Sets the width of the main container to 90% of the parent */
+  max-width: 1200px; /* Sets a maximum width for the main container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 2rem 0; /* Adds padding top and bottom */
 }
 
 article {
-  background: #fff;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff; /* Sets the background color of articles */
+  padding: 1.5rem; /* Adds padding inside the articles */
+  margin-bottom: 1.5rem; /* Adds space below each article */
+  border-radius: 10px; /* Rounds the corners of the articles */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow to the articles */
 }
 
 article h2 a {
-  color: #333;
-  text-decoration: none;
-  font-size: 1.5rem;
+  color: #333; /* Sets the text color of article titles */
+  text-decoration: none; /* Removes underline from titles */
+  font-size: 1.5rem; /* Sets the font size for article titles */
 }
 
 article h2 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underlines titles on hover */
 }
 
 .excerpt {
-  color: #555;
-  margin-top: 0.5rem;
+  color: #555; /* Sets the color for excerpt text */
+  margin-top: 0.5rem; /* Adds space above the excerpt text */
 }
 
 .date {
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 0.9rem; /* Sets the font size for date text */
+  color: #777; /* Sets the color for date text */
 }
 
 #map {
-  height: 500px;
-  width: 100%;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  margin: 1.5rem 0;
+  height: 500px; /* Sets the height of the map */
+  width: 100%; /* Sets the width of the map */
+  border: 2px solid #ddd; /* Adds a border around the map */
+  border-radius: 5px; /* Rounds the corners of the map */
+  margin: 1.5rem 0; /* Adds space above and below the map */
 }
 
 /* Footer Styles */
 footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 0;
+  background: #222; /* Sets the background color of the footer */
+  color: #fff; /* Sets the text color in the footer */
+  text-align: center; /* Centers text inside the footer */
+  padding: 1.5rem 0; /* Adds padding top and bottom */
 }
 
 footer p {
-  margin: 0;
-  font-size: 0.9rem;
+  margin: 0; /* Removes default margin from footer text */
+  font-size: 0.9rem; /* Sets the font size of footer text */
 }
 
 /* Contact Form Styles */
 .contact-form {
-  background: #fff;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff; /* Sets the background color of the contact form */
+  padding: 1.5rem; /* Adds padding inside the form */
+  margin-top: 2rem; /* Adds space above the form */
+  border-radius: 10px; /* Rounds the corners of the form */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow to the form */
 }
 
 .contact-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+  display: block; /* Makes labels block elements */
+  margin-bottom: 0.5rem; /* Adds space below labels */
+  font-weight: bold; /* Makes label text bold */
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  width: 100%; /* Sets the width of inputs and textareas to 100% */
+  padding: 0.75rem; /* Adds padding inside inputs and textareas */
+  margin-bottom: 1.5rem; /* Adds space below inputs and textareas */
+  border: 1px solid #ddd; /* Adds a border around inputs and textareas */
+  border-radius: 5px; /* Rounds the corners of inputs and textareas */
 }
 
 .contact-form button {
-  padding: 0.75rem 1.5rem;
-  background: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 0.75rem 1.5rem; /* Adds padding inside the button */
+  background: #333; /* Sets the background color of the button */
+  color: #fff; /* Sets the text color of the button */
+  border: none; /* Removes border from the button */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .contact-form button:hover {
-  background: #555;
+  background: #555; /* Changes background color on hover */
 }
 
 /* Hamburger Menu for Mobile */
 @media (max-width: 768px) {
   header .container {
-    flex-direction: column; /* Stapelt die Inhalte untereinander */
-    text-align: center;
+    flex-direction: column; /* Stacks header contents vertically on mobile */
+    align-items: center; /* Centers header contents horizontally on mobile */
+    text-align: center; /* Centers text inside the header on mobile */
   }
 
   .menu-toggle {
-    display: block;
+    display: block; /* Shows the menu button on mobile */
   }
 
   nav ul {
-    flex-direction: column;
-    display: none;
-    width: 100%;
-    background-color: #222;
-    padding: 10px 0;
+    flex-direction: column; /* Stacks navigation items vertically on mobile */
+    display: none; /* Hides navigation items by default */
+    width: 100%; /* Sets navigation width to 100% */
+    background-color: #222; /* Sets background color of the navigation */
+    padding: 10px 0; /* Adds padding top and bottom */
   }
 
   nav ul.showing {
-    display: flex;
+    display: flex; /* Displays navigation items when the menu is toggled */
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 10px 0; /* Adds space between navigation items on mobile */
   }
 
   nav ul li a {
-    width: 100%;
-    padding: 10px;
-    background-color: #444;
-    border-radius: 5px;
+    width: 100%; /* Sets link width to 100% */
+    padding: 10px; /* Adds padding inside the links */
+    background-color: #444; /* Sets background color of links on mobile */
+    border-radius: 5px; /* Rounds the corners of links */
   }
 
   main.container {
-    width: 95%;
-    padding: 1rem 0;
+    width: 95%; /* Sets width of the main container to 95% on mobile */
+    padding: 1rem 0; /* Adds padding top and bottom on mobile */
   }
 
   article {
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 1rem; /* Adds padding inside articles on mobile */
+    margin-bottom: 1rem; /* Adds space below articles on mobile */
   }
 
   #map {
-    height: 300px;
+    height: 300px; /* Reduces height of the map on mobile */
   }
 
   footer {
-    padding: 1rem;
+    padding: 1rem; /* Adds padding top and bottom in the footer on mobile */
   }
 }
+
