@@ -152,7 +152,7 @@ article img {
 /* Ensure that images scale properly in smaller containers */
 @media (max-width: 768px) {
   article img {
-    max-width: 100px; /* Adjust the maximum width of the image for smaller screens */
+    max-width: 120px; /* Adjust the maximum width of the image for smaller screens */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto 1rem; /* Center the image and adjust margin for smaller screens */
     display: block; /* Ensure the image is centered */
