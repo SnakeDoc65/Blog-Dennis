@@ -139,7 +139,8 @@ article h2 a:hover {
 /* Image Styles */
 article img {
   float: left; /* Float the image to the left to allow text wrapping */
-  max-width: 30%; /* Set the maximum width of the image to 30% of the container */
+  max-width: 20%; /* Reduce width to 20% of the container width */
+  max-height: 20vh; /* Reduce height to 20% of the viewport height */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove bottom space often found with inline images */
   margin: 0 1rem 1rem 0; /* Margin around the image to prevent text from sticking to it */
@@ -150,7 +151,7 @@ article img {
 @media (max-width: 768px) {
   article img {
     max-width: 100%; /* Adjust the maximum width of the image for smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    max-height: 40vh; /* Ensure the image is not too tall on smaller screens */
     margin: 0 auto; /* Center the image on smaller screens */
     display: block; /* Ensure proper display */
   }
