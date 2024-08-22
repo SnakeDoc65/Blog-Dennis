@@ -139,9 +139,10 @@ article h2 a:hover {
 /* Image Styles */
 article img {
   float: left; /* Float the image to the left to allow text wrapping */
-  margin: 0 1rem 1rem 0; /* Space around the image */
   max-width: 100%; /* Ensure the image does not overflow its container */
   height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space often found with inline images */
+  margin: 0 1rem 1rem 0; /* Margin around the image to prevent text from sticking to it */
 }
 
 /* Footer Styles */
