@@ -139,8 +139,8 @@ article h2 a:hover {
 /* Image Styles */
 article img {
   float: left; /* Float the image to the left to allow text wrapping */
-  max-width: 75px; /* Set a fixed maximum width */
-  max-height: 50px; /* Set a fixed maximum height */
+  max-width: 15px; /* Set a fixed maximum width */
+  max-height: 10px; /* Set a fixed maximum height */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove bottom space often found with inline images */
   margin: 0 1rem 1rem 0; /* Margin around the image to prevent text from sticking to it */
@@ -150,11 +150,12 @@ article img {
 /* Ensure that images scale properly in smaller containers */
 @media (max-width: 768px) {
   article img {
-    max-width: 60x; /* Adjust the maximum width of the image for smaller screens */
-    max-height: 40px; /* Ensure the image is not too tall on smaller screens */
+    max-width: 12px; /* Adjust the maximum width of the image for smaller screens */
+    max-height: 8px; /* Ensure the image is not too tall on smaller screens */
     margin: 0 auto; /* Center the image on smaller screens */
   }
 }
+
 
 /* Footer Styles */
 footer {
