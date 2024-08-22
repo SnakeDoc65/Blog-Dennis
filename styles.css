@@ -143,6 +143,17 @@ article img {
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove bottom space often found with inline images */
   margin: 0 1rem 1rem 0; /* Margin around the image to prevent text from sticking to it */
+  border-radius: 5px; /* Optional: rounded corners for the image */
+}
+
+/* Ensure that images scale properly in smaller containers */
+@media (max-width: 768px) {
+  article img {
+    max-width: 100%; /* Adjust the maximum width of the image for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image on smaller screens */
+    display: block; /* Ensure proper display */
+  }
 }
 
 /* Footer Styles */
