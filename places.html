@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places Where I've Been - My Personal Blog</title>
-    <!-- Link to external CSS styles -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-    <!-- MarkerCluster CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places Where I've Been - My Personal Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <!-- MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
 </head>
-
 <body>
-    <!-- Header with navigation -->
-    <header>
-        <div class="container">
-            <h1>My Personal Blog - Dennis Ludley</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="archive.html">Archive</a>
-                <a href="places.html">Places Where I've Been</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Header with navigation -->
+  <header>
+    <div class="container">
+      <h1>My Personal Blog - Dennis Ludley</h1>
+      <button class="menu-toggle">Menu</button> <!-- Added menu toggle button -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="places.html">Places Where I've Been</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main class="container">
-        <!-- Map Section -->
-        <section>
-            <h2>Places Where I've Been</h2>
-            <div id="map"></div>
-        </section>
-    </main>
+  <main class="container">
+    <section>
+      <h2>Places Where I've Been</h2>
+      <div id="map"></div>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Dennis Ludley</p>
-    </footer>
+  <footer>
+    <p>&copy; 2024 Dennis Ludley</p>
+  </footer>
 
-    <!-- Include Leaflet and MarkerCluster JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-    <!-- Custom Map Script -->
-    <script src="maps.js"></script>
+  <!-- Include Leaflet and MarkerCluster JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+  <!-- Custom Map Script -->
+  <script src="maps.js"></script>
 </body>
-
 </html>
