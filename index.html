@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Blog - Dennis Ludley</title>
+    <title>Home - My Personal Blog</title>
     <!-- Link to external CSS styles (optional) -->
     <link rel="stylesheet" href="styles.css">
     <!-- Leaflet CSS -->
@@ -77,6 +77,15 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        .blog-post h2 a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .blog-post h2 a:hover {
+            text-decoration: underline;
+        }
+
         /* Map section */
         #map-section {
             margin-top: 40px;
@@ -105,25 +114,28 @@
     <header>
         <h1>My Personal Blog - Dennis Ludley</h1>
         <nav>
-          <a href="home.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="archive.html">Archive</a>
-          <a href="places.html">Places Where I've Been</a>
-      </nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="archive.html">Archive</a>
+            <a href="places.html">Places Where I've Been</a>
+        </nav>
     </header>
 
     <!-- Main content container -->
     <main class="container">
         <!-- Blog Posts Section -->
         <section class="blog-posts">
+            <!-- Post 1 Preview -->
             <div class="blog-post">
-                <h2>My Internship in Crete, Greece</h2>
+                <h2><a href="post1.html">My Internship in Crete, Greece</a></h2>
                 <p>This will be a blog post.</p>
                 <p>Published on: August 8, 2024</p>
             </div>
+
+            <!-- Post 2 Preview -->
             <div class="blog-post">
-                <h2>My Internship in Riga, Latvia</h2>
+                <h2><a href="post2.html">My Internship in Riga, Latvia</a></h2>
                 <p>By chance, I came across the Erasmus program for people in vocational training.</p>
                 <p>Published on: July 20, 2024</p>
             </div>
