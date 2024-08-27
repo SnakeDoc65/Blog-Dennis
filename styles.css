@@ -163,6 +163,13 @@ p {
   background-color: #357abd; /* Dunkleres Blau beim Hover */
 }
 
+#map {
+  width: 100%;
+  height: 600px; /* Stellen Sie sicher, dass die Höhe der Karte ausreichend ist */
+  border: 1px solid #ddd; /* Optional: Um die Karte besser sichtbar zu machen */
+}
+
+
 /* Footer Styles */
 footer {
   background: #4a90e2; /* Helles Blau für den Footer */
