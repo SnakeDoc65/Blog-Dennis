@@ -1,19 +1,23 @@
 /* Global Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
-  background: #f4f4f4;
+  background: #f9f9f9;
   line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-  background: #222;
+  background: #333;
   color: #fff;
   padding: 1rem;
-  text-align: center; /* Hinzugefügte Zeile, um den gesamten Header-Inhalt zu zentrieren */
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 header .container {
@@ -21,22 +25,13 @@ header .container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: center; /* Überschriften zentrieren */
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.5rem;
-  text-align: center; /* Hinzugefügte Zeile, um die Überschrift zu zentrieren */
-}
-
-/* Navigation Styles */
-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  font-size: 1.8rem;
 }
 
 nav ul {
@@ -44,12 +39,10 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center menu items horizontally */
 }
 
 nav ul li {
-  margin: 10px 0;
+  margin-left: 15px;
 }
 
 nav ul li a {
@@ -68,52 +61,91 @@ nav ul li a:hover {
 /* Hamburger Menu for Mobile */
 .menu-toggle {
   display: none;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center; /* Center text inside button */
-    margin: 0 auto; /* Center button */
   }
 
   nav ul {
     flex-direction: column;
     display: none;
+    background-color: #333;
     width: 100%;
-    background-color: #222;
-    padding: 10px 0;
-    align-items: center; /* Center menu items horizontally */
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 
   nav ul.showing {
-    display: flex;
+    display: block;
+  }
+
+  nav ul li {
+    margin: 0;
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-align: center;
   }
 }
 
 /* Main Content Styles */
-main.container {
+main {
+  padding-top: 80px; /* Spacing for fixed header */
+}
+
+.container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
 }
 
-section.blog-posts {
-  display: flex;
-  flex-direction: column;
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #444;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 article {
   background: #fff;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -138,33 +170,9 @@ article h2 a:hover {
   color: #777;
 }
 
-/* Image Styles */
-/* Image Styles */
-/* Image Styles */
-/* Image Styles */
-article img {
-  float: left; /* Float the image to the left to allow text wrapping */
-  max-width: 150px; /* Set a reasonable maximum width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove bottom space often found with inline images */
-  margin: 0 1rem 1rem 0; /* Margin around the image to prevent text from sticking to it */
-  border-radius: 5px; /* Optional: rounded corners for the image */
-}
-
-/* Ensure that images scale properly in smaller containers */
-@media (max-width: 768px) {
-  article img {
-    max-width: 120px; /* Adjust the maximum width of the image for smaller screens */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto 1rem; /* Center the image and adjust margin for smaller screens */
-    display: block; /* Ensure the image is centered */
-  }
-}
-
-
 /* Footer Styles */
 footer {
-  background: #222;
+  background: #333;
   color: #fff;
   text-align: center;
   padding: 1.5rem 0;
@@ -173,41 +181,4 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9rem;
-}
-
-/* Contact Form Styles */
-.contact-form {
-  background: #fff;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.contact-form button {
-  padding: 0.75rem 1.5rem;
-  background: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background: #555;
 }
