@@ -1,10 +1,13 @@
 // Initialize the map
+console.log("Initializing map...");
 var map = L.map('map').setView([47, 10], 4); // Centered around Europe with an appropriate zoom level
 
 // Add tile layer (CartoDB Positron for English labels)
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> and <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
+
+console.log("Tile layer added.");
 
 // Initialize marker cluster group
 var markersCluster = L.markerClusterGroup();
@@ -35,5 +38,8 @@ markers.forEach(function(marker) {
     markersCluster.addLayer(leafletMarker);
 });
 
+console.log("Markers added.");
+
 // Add cluster group to map
 map.addLayer(markersCluster);
+console.log("Markers cluster added to map.");
