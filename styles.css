@@ -13,6 +13,7 @@ header {
   background: #222;
   color: #fff;
   padding: 1rem;
+  text-align: center; /* Hinzugefügte Zeile, um den gesamten Header-Inhalt zu zentrieren */
 }
 
 header .container {
@@ -20,7 +21,7 @@ header .container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Überschriften zentrieren */
   align-items: center;
   flex-wrap: wrap;
 }
@@ -28,6 +29,7 @@ header .container {
 header h1 {
   margin: 0;
   font-size: 1.5rem;
+  text-align: center; /* Hinzugefügte Zeile, um die Überschrift zu zentrieren */
 }
 
 /* Navigation Styles */
