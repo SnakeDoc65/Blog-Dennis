@@ -46,28 +46,7 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     <!-- Custom Map Script -->
-    <script>
-        // Initialize the map
-        const map = L.map('map').setView([51.1657, 10.4515], 6); // Set the center and zoom level
+    <script src="maps.js"></script>
+</body>
 
-        // Add a tile layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Define the markers
-        const markers = L.markerClusterGroup();
-        const locations = [
-            { lat: 35.3400, lng: 25.1100, popup: 'Crete, Greece' },
-            { lat: 56.9496, lng: 24.1059, popup: 'Riga, Latvia' }
-        ];
-
-        // Add markers to the cluster group
-        locations.forEach(location => {
-            const marker = L.marker([location.lat, location.lng])
-                .bindPopup(location.popup);
-            markers.addLayer(marker);
-        });
-
-       
+</html>
