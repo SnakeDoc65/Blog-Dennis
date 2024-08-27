@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places Where I've Been - My Personal Blog</title>
+    <title>Home - My Personal Blog</title>
     <!-- Link to external CSS styles (optional) -->
     <link rel="stylesheet" href="styles.css">
     <!-- Leaflet CSS -->
@@ -94,12 +94,6 @@
             padding: 20px;
             margin-top: 40px;
         }
-
-        /* Map container */
-        #map {
-            height: 500px;
-            width: 100%;
-        }
     </style>
 </head>
 
@@ -131,50 +125,12 @@
                 <p>Published on: July 20, 2024</p>
             </div>
         </section>
-
-        <!-- Map Section -->
-        <section>
-            <h2>Places Where I've Been</h2>
-            <div id="map"></div>
-        </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Dennis Ludley</p>
     </footer>
-
-    <!-- Include Leaflet and MarkerCluster JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-    <!-- Custom Map Script -->
-    <script>
-        // Initialize the map
-        const map = L.map('map').setView([51.1657, 10.4515], 6); // Set the center and zoom level
-
-        // Add a tile layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Define the markers
-        const markers = L.markerClusterGroup();
-        const locations = [
-            { lat: 35.3400, lng: 25.1100, popup: 'Crete, Greece' },
-            { lat: 56.9496, lng: 24.1059, popup: 'Riga, Latvia' }
-        ];
-
-        // Add markers to the cluster group
-        locations.forEach(location => {
-            const marker = L.marker([location.lat, location.lng])
-                .bindPopup(location.popup);
-            markers.addLayer(marker);
-        });
-
-        // Add the marker cluster group to the map
-        map.addLayer(markers);
-    </script>
 </body>
 
 </html>
