@@ -121,7 +121,7 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem; /* Vergrößerte Schriftgröße für den Text */
   margin-bottom: 20px;
 }
 
@@ -137,15 +137,17 @@ p {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
+  font-size: 1.1rem; /* Vergrößerte Schriftgröße für Labels */
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Etwas mehr Padding für größere Schrift */
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-bottom: 20px;
+  font-size: 1.1rem; /* Vergrößerte Schriftgröße für Eingabefelder */
 }
 
 .contact-form button {
@@ -153,7 +155,7 @@ p {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1.1rem; /* Vergrößerte Schriftgröße für den Button */
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
