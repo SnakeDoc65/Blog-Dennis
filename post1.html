@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exciting New Developments in Web Design</title>
+  <title>My Internship in Crete, Greece - My Personal Blog</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="container">
       <h1>My Personal Blog</h1>
+      <button class="menu-toggle">Menu</button> <!-- Added menu toggle button -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="archive.html">Archive</a></li>
+          <li><a href="places.html">Places Where I've Been</a></li>
         </ul>
       </nav>
     </div>
@@ -25,8 +27,7 @@
       <h1>My Internship in Crete, Greece</h1>
       <p class="date">Published on: August 8, 2024</p>
       <div class="content">
-        <p>  </p>
-        <!-- Full post content goes here -->
+        <p><!-- Full post content goes here --></p>
       </div>
       <section class="comments">
         <h2>Comments</h2>
@@ -44,5 +45,16 @@
   <footer>
     <p>&copy; 2024 Dennis Ludley</p>
   </footer>
+
+  <!-- JavaScript to toggle mobile menu -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('nav ul');
+      toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('showing');
+      });
+    });
+  </script>
 </body>
 </html>
