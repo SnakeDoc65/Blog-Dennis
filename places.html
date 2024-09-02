@@ -45,5 +45,15 @@
   <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
   <script src="maps.js"></script>
 
+  <!-- JavaScript to toggle mobile menu -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('nav ul');
+      toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('showing');
+      });
+    });
+  </script>
 </body>
 </html>
