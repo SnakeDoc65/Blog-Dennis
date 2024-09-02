@@ -201,3 +201,87 @@ figcaption {
   width: 100%; /* Volle Breite */
   margin: 20px 0; /* Abstand oben und unten */
 }
+/* Comments Section Styles */
+.comments {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Heller Hintergrund für Kontrast */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comments h2 {
+  font-size: 1.8rem;
+  color: #4a90e2; /* Gleiche Akzentfarbe wie für Überschriften */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comments form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Abstand zwischen den Formularfeldern */
+}
+
+.comments label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.comments input[type="text"],
+.comments textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.comments button[type="submit"] {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bb5;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comments button[type="submit"]:hover {
+  background-color: #005f8a;
+}
+
+.comment-list {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+
+.comment strong {
+  color: #4a90e2; /* Name des Kommentators in Akzentfarbe */
+}
+
+.comment-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Responsive Styles for Comments */
+@media (max-width: 768px) {
+  .comments {
+      padding: 10px; /* Weniger Padding auf kleineren Bildschirmen */
+  }
+
+  .comments h2 {
+      font-size: 1.5rem; /* Kleinere Schriftgröße für Überschrift */
+  }
+}
