@@ -301,3 +301,18 @@ body {
       font-size: 1.5rem;
   }
 }
+/* Style for workplace image */
+.workplace-image {
+  width: 60%; /* Bild auf 60% der Containerbreite setzen */
+  max-width: 600px; /* Maximale Breite von 600 Pixeln */
+  height: auto; /* Verhältnis beibehalten */
+  display: block;
+  margin: 0 auto; /* Zentrieren des Bildes */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .workplace-image {
+      width: 80%; /* Auf mobilen Geräten etwas größer anzeigen */
+  }
+}
