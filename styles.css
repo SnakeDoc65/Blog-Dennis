@@ -28,22 +28,6 @@ header .container {
   flex-wrap: wrap;
 }
 
-/* Logo und Header Titel Stil */
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 50px; /* Anpassung der Höhe des Logos */
-  margin-right: 15px; /* Abstand zwischen Logo und Text */
-}
-
-header h1 {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
 /* Navigation Styles */
 nav {
   display: flex;
@@ -206,12 +190,14 @@ figcaption {
     width: 100%; /* Inhalt nimmt die gesamte Breite ein */
   }
 }
+
 /* Karte */
 #map {
   height: 500px; /* Höhe der Karte */
   width: 100%; /* Volle Breite */
   margin: 20px 0; /* Abstand oben und unten */
 }
+
 /* General Styles */
 body {
   margin: 0;
@@ -312,6 +298,7 @@ body {
       font-size: 1.5rem;
   }
 }
+
 /* Style for workplace image */
 .workplace-image {
   width: 60%; /* Bild auf 60% der Containerbreite setzen */
@@ -327,6 +314,7 @@ body {
       width: 80%; /* Auf mobilen Geräten etwas größer anzeigen */
   }
 }
+
 /* Kontaktformular Stile */
 .contact-form {
   background-color: #ffffff; /* Weißer Hintergrund für das Formular */
