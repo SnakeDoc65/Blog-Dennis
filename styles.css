@@ -316,3 +316,25 @@ body {
       width: 80%; /* Auf mobilen Geräten etwas größer anzeigen */
   }
 }
+/* Kontaktformular Stile */
+.contact-form {
+  background-color: #ffffff; /* Weißer Hintergrund für das Formular */
+  padding: 20px; /* Innenabstand */
+  border-radius: 8px; /* Abgerundete Ecken */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+  max-width: 600px; /* Maximale Breite für das Formular */
+  margin: 20px auto; /* Zentrierung und Abstand oben/unten */
+}
+
+.contact-form label {
+  display: block; /* Jedes Label auf eine eigene Zeile */
+  margin-bottom: 5px; /* Abstand zum Eingabefeld */
+  font-weight: bold; /* Fettgedruckter Text */
+  color: #333; /* Dunkle Schriftfarbe */
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%; /* Volle Breite der Formularfelder */
+  padding: 10px; /* Innenabstand */
+  margin-bottom: 10px; /*
