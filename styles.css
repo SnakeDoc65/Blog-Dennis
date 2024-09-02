@@ -113,8 +113,36 @@ main {
   margin: 0 auto;
 }
 
-h2 {
+.blog-post {
+  background: #fff; /* Hintergrundfarbe für jeden Blog-Post */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für visuelle Tiefe */
+  margin-bottom: 20px;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-post figure {
+  margin: 0;
+  text-align: center;
+}
+
+.blog-post figcaption {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+h1, h2 {
   color: #4a90e2; /* Akzentfarbe für Überschriften */
+}
+
+h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -151,44 +179,45 @@ footer p {
   }
 }
 
-/* Blog post layout */
-.blog-post {
-  display: flex; /* Flexbox verwenden, um Bild und Inhalt nebeneinander anzuordnen */
-  margin-bottom: 20px;
-  background: #fff; /* Hintergrundfarbe für jeden Blog-Post */
-  padding: 10px;
+/* Kommentare Bereich */
+.comments {
+  background: #fff; /* Hintergrundfarbe für den Kommentarbereich */
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für visuelle Tiefe */
 }
 
-.post-image {
-  flex: 0 0 150px; /* Bild nimmt eine feste Breite von 150px ein */
-  height: 100px; /* Höhe des Bildes */
-  object-fit: cover; /* Bild skaliert, um den Container zu füllen */
-  margin-right: 20px; /* Abstand zwischen Bild und Inhalt */
-  border-radius: 8px; /* Abgerundete Ecken */
+.comments h2 {
+  color: #4a90e2; /* Akzentfarbe für Überschrift im Kommentarbereich */
 }
 
-.post-content {
-  flex: 1; /* Inhalt nimmt den restlichen Platz ein */
+.comments form {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Für mobile Geräte anpassen */
-@media (max-width: 768px) {
-  .blog-post {
-      flex-direction: column; /* Bild und Inhalt untereinander auf kleineren Bildschirmen */
-      align-items: center;
-      text-align: center;
-  }
+.comments label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-  .post-image {
-      margin-right: 0; /* Kein Abstand auf mobilen Geräten */
-      margin-bottom: 10px; /* Abstand zwischen Bild und Inhalt */
-      width: 100%; /* Bild füllt die gesamte Breite auf mobilen Geräten */
-      height: auto; /* Höhe automatisch anpassen */
-  }
+.comments input, .comments textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  .post-content {
-      width: 100%; /* Inhalt nimmt die gesamte Breite ein */
-  }
+.comments button {
+  background-color: #4a90e2; /* Blau für den Button */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.comments button:hover {
+  background-color: #005f8a; /* Dunkleres Blau beim Hover */
 }
