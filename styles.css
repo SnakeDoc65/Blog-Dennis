@@ -337,4 +337,36 @@ body {
 .contact-form textarea {
   width: 100%; /* Volle Breite der Formularfelder */
   padding: 10px; /* Innenabstand */
-  margin-bottom: 10px; /*
+  margin-bottom: 10px; /* Abstand nach unten */
+  border: 1px solid #ccc; /* Grauer Rahmen */
+  border-radius: 4px; /* Leicht abgerundete Ecken */
+  font-size: 1rem; /* Größere Schrift für Eingabefelder */
+  box-sizing: border-box; /* Box-Model-Inklusive Padding */
+}
+
+.contact-form textarea {
+  resize: vertical; /* Vertikales Ändern der Größe erlaubt */
+  min-height: 150px; /* Mindesthöhe für den Textbereich */
+}
+
+.contact-form button {
+  display: inline-block; /* Inline-Block für den Button */
+  background: #4a90e2; /* Blau für den Hintergrund des Buttons */
+  color: #fff; /* Weiße Schriftfarbe */
+  border: none; /* Kein Rahmen */
+  padding: 10px 20px; /* Innenabstand */
+  cursor: pointer; /* Zeigt eine Hand beim Hover an */
+  border-radius: 4px; /* Abgerundete Ecken */
+  transition: background-color 0.3s ease; /* Weiche Übergänge */
+}
+
+.contact-form button:hover {
+  background: #005f8a; /* Dunkleres Blau beim Hover */
+}
+
+/* Responsive Anpassungen für das Kontaktformular */
+@media (max-width: 768px) {
+  .contact-form {
+      padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
+  }
+}
