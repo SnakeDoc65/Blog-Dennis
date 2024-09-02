@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Personal Blog</title>
-    <!-- Link to external CSS styles (optional) -->
+    <!-- Link to external CSS styles -->
     <link rel="stylesheet" href="styles.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
@@ -19,12 +19,15 @@
     <header>
         <div class="container">
             <h1>My Personal Blog - Dennis Ludley</h1>
+            <button class="menu-toggle">Menu</button>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="archive.html">Archive</a>
-                <a href="places.html">Places Where I've Been</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                    <li><a href="places.html">Places Where I've Been</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -50,6 +53,17 @@
     <footer>
         <p>&copy; 2024 Dennis Ludley</p>
     </footer>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('nav ul');
+            toggleButton.addEventListener('click', () => {
+                navMenu.classList.toggle('showing');
+            });
+        });
+    </script>
 </body>
 
 </html>

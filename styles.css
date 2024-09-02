@@ -14,10 +14,7 @@ header {
   color: #fff;
   padding: 1rem;
   text-align: center;
-  position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 1000;
   box-sizing: border-box;
 }
 
@@ -28,6 +25,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -79,37 +77,38 @@ nav a:hover {
 
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+      display: block;
+      margin-left: auto;
   }
 
   nav ul {
-    display: none; /* Hide ul by default */
-    flex-direction: column;
-    background-color: #333;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
+      display: none; /* Hide ul by default */
+      flex-direction: column;
+      background-color: #4a90e2;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
   }
 
   nav ul.showing {
-    display: flex; /* Show ul when menu toggle is clicked */
+      display: flex; /* Show ul when menu toggle is clicked */
   }
 
   nav li {
-    margin: 0; /* Remove margin for vertical alignment */
+      margin: 0; /* Remove margin for vertical alignment */
   }
 
   nav a {
-    display: block;
-    padding: 15px;
-    text-align: center;
+      display: block;
+      padding: 15px;
+      text-align: center;
   }
 }
 
 /* Main Content Styles */
 main {
-  padding: 100px 20px 20px; /* Spacing for fixed header and padding */
+  padding: 80px 20px 20px; /* Anpassung für Header */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -124,53 +123,6 @@ p {
   font-size: 1.2rem; /* Vergrößerte Schriftgröße für den Text */
   margin-bottom: 20px;
 }
-
-/* Contact Form Styles */
-.contact-form {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 1.1rem; /* Vergrößerte Schriftgröße für Labels */
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px; /* Etwas mehr Padding für größere Schrift */
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  font-size: 1.1rem; /* Vergrößerte Schriftgröße für Eingabefelder */
-}
-
-.contact-form button {
-  background: #4a90e2; /* Blaue Hintergrundfarbe für den Button */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.1rem; /* Vergrößerte Schriftgröße für den Button */
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #357abd; /* Dunkleres Blau beim Hover */
-}
-
-#map {
-  width: 100%;
-  height: 600px; /* Stellen Sie sicher, dass die Höhe der Karte ausreichend ist */
-  border: 1px solid #ddd; /* Optional: Um die Karte besser sichtbar zu machen */
-}
-
 
 /* Footer Styles */
 footer {
