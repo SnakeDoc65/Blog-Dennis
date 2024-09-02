@@ -136,3 +136,9 @@ footer p {
   margin: 0;
   font-size: 0.9rem;
 }
+
+#map {
+  height: 500px; /* Definiert die Höhe der Karte */
+  width: 100%; /* Die Karte nimmt die gesamte Breite des Containers ein */
+  margin: 20px 0; /* Fügt etwas Abstand um die Karte hinzu */
+}
