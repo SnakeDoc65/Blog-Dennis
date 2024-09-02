@@ -137,8 +137,17 @@ footer p {
   font-size: 0.9rem;
 }
 
+/* Map styles */
 #map {
-  height: 500px; /* Definiert die Höhe der Karte */
-  width: 100%; /* Die Karte nimmt die gesamte Breite des Containers ein */
-  margin: 20px 0; /* Fügt etwas Abstand um die Karte hinzu */
+  height: 500px; /* Höhe der Karte für größere Bildschirme */
+  width: 100%; /* Karte nimmt die volle Breite des Containers ein */
+  margin: 20px 0; /* Abstand um die Karte */
 }
+
+/* Anpassung der Kartengröße für kleinere Bildschirme */
+@media (max-width: 768px) {
+  #map {
+      height: 300px; /* Reduzierte Höhe für kleinere Bildschirme */
+  }
+}
+
