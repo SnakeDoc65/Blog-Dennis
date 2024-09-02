@@ -195,3 +195,9 @@ figcaption {
     width: 100%; /* Inhalt nimmt die gesamte Breite ein */
   }
 }
+/* Karte */
+#map {
+  height: 500px; /* Höhe der Karte */
+  width: 100%; /* Volle Breite */
+  margin: 20px 0; /* Abstand oben und unten */
+}
