@@ -4,14 +4,14 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background: #f4f7f9; /* Helles Grau für den Hintergrund */
+  background: #f4f7f9;
   line-height: 1.6;
-  box-sizing: border-box; /* Hilft bei der Kontrolle der Breiten von Elementen */
+  box-sizing: border-box;
 }
 
 /* Header Styles */
 header {
-  background: #4a90e2; /* Helles Blau für den Header */
+  background: #4a90e2;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -49,13 +49,13 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
-  background-color: #007bb5; /* Blau für Links */
+  background-color: #007bb5;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #005f8a; /* Dunkleres Blau beim Hover */
+  background-color: #005f8a;
   transform: scale(1.05);
 }
 
@@ -77,7 +77,7 @@ nav a:hover {
   }
 
   nav ul {
-    display: none; /* Hide ul by default */
+    display: none;
     flex-direction: column;
     background-color: #4a90e2;
     width: 100%;
@@ -87,11 +87,11 @@ nav a:hover {
   }
 
   nav ul.showing {
-    display: flex; /* Show ul when menu toggle is clicked */
+    display: flex;
   }
 
   nav li {
-    margin: 0; /* Remove margin for vertical alignment */
+    margin: 0;
   }
 
   nav a {
@@ -103,25 +103,25 @@ nav a:hover {
 
 /* Main Content Styles */
 main {
-  padding: 80px 20px 20px; /* Anpassung für Header */
+  padding: 80px 20px 20px;
   max-width: 800px;
   margin: 0 auto;
 }
 
 h2 {
-  color: #4a90e2; /* Akzentfarbe für Überschriften */
+  color: #4a90e2;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
 p {
-  font-size: 1.2rem; /* Vergrößerte Schriftgröße für den Text */
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
 /* Footer Styles */
 footer {
-  background: #4a90e2; /* Helles Blau für den Footer */
+  background: #4a90e2;
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -135,22 +135,21 @@ footer p {
 /* Bildstile */
 figure {
   position: relative;
-  display: inline-block;
+  display: block; /* Ensure figure is a block element */
   text-align: center;
-  margin: 20px 0;
+  margin: 20px auto; /* Horizontale Zentrierung */
 }
 
 figure img {
-  max-width: 100%; /* Bild soll sich der Breite des Containers anpassen */
-  height: auto; /* Höhe automatisch anpassen */
-  border-radius: 8px; /* Abgerundete Ecken */
-  display: block; /* Sicherstellen, dass das Bild als Blockelement behandelt wird */
-  margin: 0 auto; /* Bild horizontal zentrieren */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: inline-block; /* Inline-block für korrekte Zentrierung */
 }
 
 figcaption {
   font-style: italic;
-  color: #666; /* Etwas grauer für die Bildunterschrift */
+  color: #666;
 }
 
 /* Blog post layout */
@@ -159,11 +158,11 @@ figcaption {
   flex-direction: row;
   margin-bottom: 30px;
   background: #fff;
-  padding: 30px; /* Erhöhtes Padding für größeren Kasten */
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 80%; /* Größere Breite auf größeren Bildschirmen */
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -174,9 +173,9 @@ figcaption {
 }
 
 .post-image {
-  flex: 0 0 220px; /* Breitere Bilder */
-  max-width: 220px; 
-  height: 160px; /* Etwas höhere Bilder */
+  flex: 0 0 220px;
+  max-width: 220px;
+  height: 160px;
   object-fit: cover;
   border-radius: 8px;
   margin-right: 20px;
@@ -187,8 +186,8 @@ figcaption {
 }
 
 .internship-title {
-  color: #4a90e2; /* Blau, passend zum Header und Footer */
-  font-size: 3rem; /* Größere Schriftgröße für den Titel */
+  color: #4a90e2;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-top: 50px;
@@ -200,7 +199,7 @@ figcaption {
   margin-bottom: 20px;
 }
 
-/* Responsiv für kleinere Bildschirme */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .blog-post {
     flex-direction: column;
@@ -222,9 +221,9 @@ figcaption {
 
 /* Karte */
 #map {
-  height: 500px; /* Höhe der Karte */
-  width: 100%; /* Volle Breite */
-  margin: 20px 0; /* Abstand oben und unten */
+  height: 500px;
+  width: 100%;
+  margin: 20px 0;
 }
 
 /* Comments Section Styles */
@@ -234,8 +233,8 @@ figcaption {
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 100%; /* Verhindert, dass der Container zu breit wird */
-  overflow: hidden; /* Hilft, Inhalte innerhalb des Containers zu halten */
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .comments h2 {
@@ -259,17 +258,17 @@ figcaption {
 
 .comments input[type="text"],
 .comments textarea {
-  width: 100%; /* Breite auf 100% des Containers begrenzt */
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  box-sizing: border-box; /* Inklusive Padding und Border in der Breite */
+  box-sizing: border-box;
 }
 
 .comments textarea {
-  resize: vertical; /* Erlaubt die Größenänderung des Textbereichs nur vertikal */
-  min-height: 100px; /* Mindesthöhe für das Textfeld */
+  resize: vertical;
+  min-height: 100px;
 }
 
 .comments button[type="submit"] {
@@ -322,101 +321,101 @@ figcaption {
 
 /* Stil für das Bild von der Segeltour */
 .sailing-trip-image {
-  width: 50%; /* Bild auf 50% der Containerbreite setzen */
-  max-width: 500px; /* Maximale Breite von 500 Pixeln */
-  height: auto; /* Verhältnis beibehalten */
+  width: 50%;
+  max-width: 500px;
+  height: auto;
   display: block;
-  margin: 0 auto; /* Zentrieren des Bildes */
+  margin: 0 auto;
 }
 
 /* Stil für das Bild vom Arbeitsplatz */
 .workplace-image {
-  width: 60%; /* Bild auf 60% der Containerbreite setzen */
-  max-width: 600px; /* Maximale Breite von 600 Pixeln */
-  height: auto; /* Verhältnis beibehalten */
+  width: 60%;
+  max-width: 600px;
+  height: auto;
   display: block;
-  margin: 0 auto; /* Zentrieren des Bildes */
+  margin: 0 auto;
 }
 
 /* Responsive Anpassung für kleinere Bildschirme */
 @media (max-width: 768px) {
   .workplace-image {
-    width: 80%; /* Auf mobilen Geräten etwas größer anzeigen */
+    width: 80%;
   }
 
   .sailing-trip-image {
-    width: 80%; /* Auf mobilen Geräten etwas größer anzeigen */
+    width: 80%;
   }
 }
 
 /* Kontaktformular Stile */
 .contact-form {
-  background-color: #ffffff; /* Weißer Hintergrund für das Formular */
-  padding: 20px; /* Innenabstand */
-  border-radius: 8px; /* Abgerundete Ecken */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
-  max-width: 600px; /* Maximale Breite für das Formular */
-  margin: 20px auto; /* Zentrierung und Abstand oben/unten */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 .contact-form label {
-  display: block; /* Jedes Label auf eine eigene Zeile */
-  margin-bottom: 5px; /* Abstand zum Eingabefeld */
-  font-weight: bold; /* Fettgedruckter Text */
-  color: #333; /* Dunkle Schriftfarbe */
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
 }
 
 .contact-form input, 
 .contact-form textarea {
-  width: 100%; /* Volle Breite der Formularfelder */
-  padding: 10px; /* Innenabstand */
-  margin-bottom: 10px; /* Abstand nach unten */
-  border: 1px solid #ccc; /* Grauer Rahmen */
-  border-radius: 4px; /* Leicht abgerundete Ecken */
-  font-size: 1rem; /* Größere Schrift für Eingabefelder */
-  box-sizing: border-box; /* Box-Model-Inklusive Padding */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 .contact-form textarea {
-  resize: vertical; /* Vertikales Ändern der Größe erlaubt */
-  min-height: 150px; /* Mindesthöhe für den Textbereich */
+  resize: vertical;
+  min-height: 150px;
 }
 
 .contact-form button {
-  display: inline-block; /* Inline-Block für den Button */
-  background: #4a90e2; /* Blau für den Hintergrund des Buttons */
-  color: #fff; /* Weiße Schriftfarbe */
-  border: none; /* Kein Rahmen */
-  padding: 10px 20px; /* Innenabstand */
-  cursor: pointer; /* Zeigt eine Hand beim Hover an */
-  border-radius: 4px; /* Abgerundete Ecken */
-  transition: background-color 0.3s ease; /* Weiche Übergänge */
+  display: inline-block;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background: #005f8a; /* Dunkleres Blau beim Hover */
+  background: #005f8a;
 }
 
 /* Pfeil-Button für Bilder */
 .toggle-button {
   position: absolute;
   top: 50%;
-  right: 10px; /* Pfeil nach rechts verschieben */
+  right: 10px;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.5); /* Halbdurchsichtiger Hintergrund */
+  background: rgba(255, 255, 255, 0.5);
   border: none;
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
   color: gray;
-  z-index: 10; /* Über dem Bild */
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .toggle-button:before {
-  content: '→'; /* Pfeilzeichen nach rechts */
+  content: '→';
   font-size: 20px;
 }
 
