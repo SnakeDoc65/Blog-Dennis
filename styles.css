@@ -101,12 +101,7 @@ nav a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .medium-large-image {
-    width: 90%; /* Erhöht die Breite für kleinere Bildschirme */
-    max-width: none; /* Entfernt die maximale Breite */
-  }
-}
+
 
 /* Main Content Styles */
 main {
@@ -336,11 +331,17 @@ figcaption {
 }
 
 .medium-large-image {
-  width: 70%; /* Breite auf 70% der Containerbreite */
-  max-width: 600px; /* Maximale Breite auf 600 Pixel begrenzen */
-  height: auto; /* Verhältnis beibehalten */
+  width: 80%; /* Erhöht die Breite auf 80% der Containerbreite auf mobilen Geräten */
+  max-width: 600px; /* Setzt eine maximale Breite für größere Bildschirme */
+  height: auto; /* Beibehaltung des Seitenverhältnisses */
   display: block;
-  margin: 0 auto; /* Zentrieren des Bildes */
+  margin: 0 auto; /* Zentriert das Bild */
+}
+
+@media (max-width: 768px) {
+  .medium-large-image {
+    width: 90%; /* Erhöht die Breite für kleinere Bildschirme */
+  }
 }
 
 
