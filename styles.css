@@ -151,54 +151,45 @@ figcaption {
 
 /* Blog post layout */
 .blog-post {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 30px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dezenter Schatten für eleganten Look */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation bei Hover */
-}
-
-.blog-post:hover {
-  transform: translateY(-3px); /* Leichtes Heben beim Hover */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Intensiverer Schatten */
+  display: flex; /* Flexbox verwenden, um Bild und Inhalt nebeneinander anzuordnen */
+  margin-bottom: 20px;
+  background: #fff; /* Hintergrundfarbe für jeden Blog-Post */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für visuelle Tiefe */
 }
 
 .post-image {
-  flex: 0 0 200px; /* Bild bleibt in einem festen Rahmen */
-  max-width: 200px; /* Maximalbreite des Bildes */
-  height: 150px; /* Feste Höhe für das Bild */
-  object-fit: cover; /* Bild wird innerhalb des Containers skaliert */
-  border-radius: 8px;
-  margin-right: 20px;
+  flex: 0 0 150px; /* Bild nimmt eine feste Breite von 150px ein */
+  height: 100px; /* Höhe des Bildes */
+  object-fit: cover; /* Bild skaliert, um den Container zu füllen */
+  margin-right: 20px; /* Abstand zwischen Bild und Inhalt */
+  border-radius: 8px; /* Abgerundete Ecken */
 }
 
 .post-content {
   flex: 1; /* Inhalt nimmt den restlichen Platz ein */
 }
 
-/* Responsiv für kleinere Bildschirme */
+/* Für mobile Geräte anpassen */
 @media (max-width: 768px) {
   .blog-post {
-    flex-direction: column; /* Bild und Text untereinander auf mobilen Geräten */
+    flex-direction: column; /* Bild und Inhalt untereinander auf kleineren Bildschirmen */
     align-items: center;
     text-align: center;
   }
 
   .post-image {
-    margin-right: 0;
-    margin-bottom: 15px;
-    width: 100%;
-    height: auto; /* Bild passt sich der Breite an und erhält dynamische Höhe */
+    margin-right: 0; /* Kein Abstand auf mobilen Geräten */
+    margin-bottom: 10px; /* Abstand zwischen Bild und Inhalt */
+    width: 100%; /* Bild füllt die gesamte Breite auf mobilen Geräten */
+    height: auto; /* Höhe automatisch anpassen */
   }
 
   .post-content {
-    width: 100%;
+    width: 100%; /* Inhalt nimmt die gesamte Breite ein */
   }
 }
-
 
 /* Karte */
 #map {
