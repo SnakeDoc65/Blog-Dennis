@@ -151,49 +151,43 @@ figcaption {
 
 /* Blog post layout */
 .blog-post {
-  display: flex;
-  margin-bottom: 30px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Größerer Schatten für moderne Optik */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Weicher Übergang für Hover-Effekte */
-}
-
-.blog-post:hover {
-  transform: translateY(-5px); /* Leichtes Heben beim Hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stärkerer Schatten beim Hover */
+  display: flex; /* Flexbox verwenden, um Bild und Inhalt nebeneinander anzuordnen */
+  margin-bottom: 20px;
+  background: #fff; /* Hintergrundfarbe für jeden Blog-Post */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für visuelle Tiefe */
 }
 
 .post-image {
-  flex: 0 0 250px; /* Vergrößertes Bild für größere Bildschirme */
-  height: auto; /* Höhe automatisch, um das Verhältnis beizubehalten */
-  object-fit: cover; /* Skaliert das Bild, um es in den Container zu passen */
+  flex: 0 0 150px; /* Bild nimmt eine feste Breite von 150px ein */
+  height: 100px; /* Höhe des Bildes */
+  object-fit: cover; /* Bild skaliert, um den Container zu füllen */
   margin-right: 20px; /* Abstand zwischen Bild und Inhalt */
-  border-radius: 8px;
+  border-radius: 8px; /* Abgerundete Ecken */
 }
 
 .post-content {
   flex: 1; /* Inhalt nimmt den restlichen Platz ein */
 }
 
-/* Responsive für mobile Geräte */
+/* Für mobile Geräte anpassen */
 @media (max-width: 768px) {
   .blog-post {
-    flex-direction: column; /* Bild und Inhalt untereinander */
+    flex-direction: column; /* Bild und Inhalt untereinander auf kleineren Bildschirmen */
     align-items: center;
     text-align: center;
-    padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
   }
 
   .post-image {
-    margin-right: 0;
+    margin-right: 0; /* Kein Abstand auf mobilen Geräten */
     margin-bottom: 10px; /* Abstand zwischen Bild und Inhalt */
-    width: 100%; /* Bild nimmt auf mobilen Geräten die volle Breite ein */
+    width: 100%; /* Bild füllt die gesamte Breite auf mobilen Geräten */
+    height: auto; /* Höhe automatisch anpassen */
   }
 
   .post-content {
-    width: 100%; /* Inhalt nimmt die volle Breite ein */
+    width: 100%; /* Inhalt nimmt die gesamte Breite ein */
   }
 }
 
