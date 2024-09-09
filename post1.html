@@ -41,7 +41,7 @@
         
         <!-- Inserted image of the sailing trip with a class for CSS styling -->
         <figure>
-          <img src="Pictures/Picture_Dia_Sailing.jpg" alt="Sailing Trip to Dia Island" class="sailing-trip-image">
+          <img id="sailing-image" src="Pictures/Picture_Crete_Dia_Sailing.jpg" alt="Sailing Trip to Dia Island" class="sailing-trip-image">
           <figcaption>Our sailing trip to Dia Island</figcaption>
         </figure>
       </div>
@@ -75,6 +75,19 @@
       const navMenu = document.querySelector('nav ul');
       toggleButton.addEventListener('click', () => {
         navMenu.classList.toggle('showing');
+      });
+      
+      // JavaScript for toggling the image
+      const sailingImage = document.getElementById('sailing-image');
+      let isOriginal = true;
+      
+      sailingImage.addEventListener('click', function() {
+        if (isOriginal) {
+          sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+        } else {
+          sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+        }
+        isOriginal = !isOriginal;
       });
     });
   </script>

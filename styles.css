@@ -335,6 +335,10 @@ body {
   margin: 0 auto; /* Zentrieren des Bildes */
 }
 
+#sailing-image {
+  cursor: pointer; /* Zeigt an, dass das Bild anklickbar ist */
+}
+
 /* Stil für das Bild vom Arbeitsplatz */
 .workplace-image {
   width: 60%; /* Bild auf 60% der Containerbreite setzen */
@@ -408,4 +412,8 @@ body {
   .contact-form {
       padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
   }
+}
+Stil für den Hinweis/Pfeil */
+#sailing-image {
+  cursor: pointer; /* Zeigt an, dass das Bild anklickbar ist */
 }
