@@ -182,6 +182,16 @@ figcaption {
   flex: 1;
 }
 
+/* Styling für den Titel der Praktikumsposts */
+.internship-title {
+  color: #4a90e2; /* Blau */
+  font-size: 3rem; /* Größere Schriftgröße */
+  font-weight: bold;
+  text-align: center; /* Zentriert den Titel */
+  margin-bottom: 20px;
+}
+
+
 /* Responsiv für kleinere Bildschirme */
 @media (max-width: 768px) {
   .blog-post {
