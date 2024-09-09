@@ -364,21 +364,21 @@ figcaption {
   margin: 0 auto;
 }
 
+/* Stil für die Medium-Large-Bilder */
 .medium-large-image {
   width: 85%; /* Breite auf Desktop-Geräten */
-  max-width: 700px; /* Maximale Breite für größere Bildschirme */
-  height: auto; /* Beibehaltung des Seitenverhältnisses */
+  max-width: 700px; /* Maximale Breite */
+  height: auto;
   display: block;
-  margin: 0 auto; /* Zentriert das Bild */
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .medium-large-image {
-    width: 105%; /* Erhöht die Breite auf 105% der Containerbreite auf mobilen Geräten */
-    max-width: none; /* Maximale Breite entfernen, um die Containerbreite zu überschreiten */
+    width: 105%; /* Erhöht die Breite auf mobilen Geräten */
+    max-width: none; /* Entfernt die maximale Breite */
   }
 }
-
 
 
 /* Stil für das Bild vom Arbeitsplatz */
