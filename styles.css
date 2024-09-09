@@ -101,6 +101,13 @@ nav a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .medium-large-image {
+    width: 90%; /* Erhöht die Breite für kleinere Bildschirme */
+    max-width: none; /* Entfernt die maximale Breite */
+  }
+}
+
 /* Main Content Styles */
 main {
   padding: 80px 20px 20px;
