@@ -155,34 +155,37 @@ figcaption {
   flex-direction: row;
   margin-bottom: 30px;
   background: #fff;
-  padding: 20px;
+  padding: 30px; /* Erhöhtes Padding für größeren Kasten */
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dezenter Schatten für eleganten Look */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation bei Hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 80%; /* Größere Breite auf größeren Bildschirmen */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blog-post:hover {
-  transform: translateY(-3px); /* Leichtes Heben beim Hover */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Intensiverer Schatten */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .post-image {
-  flex: 0 0 200px; /* Bild bleibt in einem festen Rahmen */
-  max-width: 200px; /* Maximalbreite des Bildes */
-  height: 150px; /* Feste Höhe für das Bild */
-  object-fit: cover; /* Bild wird innerhalb des Containers skaliert */
+  flex: 0 0 220px; /* Breitere Bilder */
+  max-width: 220px; 
+  height: 160px; /* Etwas höhere Bilder */
+  object-fit: cover;
   border-radius: 8px;
   margin-right: 20px;
 }
 
 .post-content {
-  flex: 1; /* Inhalt nimmt den restlichen Platz ein */
+  flex: 1;
 }
 
 /* Responsiv für kleinere Bildschirme */
 @media (max-width: 768px) {
   .blog-post {
-    flex-direction: column; /* Bild und Text untereinander auf mobilen Geräten */
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
@@ -191,7 +194,7 @@ figcaption {
     margin-right: 0;
     margin-bottom: 15px;
     width: 100%;
-    height: auto; /* Bild passt sich der Breite an und erhält dynamische Höhe */
+    height: auto;
   }
 
   .post-content {
