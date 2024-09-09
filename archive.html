@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>My Personal Blog</h1>
-    <button class="menu-toggle">Menu</button> <!-- Added menu toggle button -->
-    <nav>
+  <header>
+    <div class="container">
+      <h1>My Personal Blog</h1>
+      <button class="menu-toggle">Menu</button>
+      <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -21,6 +22,7 @@
       </nav>
     </div>
   </header>
+
   <main class="container">
     <section>
       <h1>Archive</h1>
@@ -28,9 +30,11 @@
       <!-- List blog posts by date or topic -->
     </section>
   </main>
+
   <footer>
     <p>&copy; 2024 Dennis Ludley</p>
   </footer>
+
   <script>
     // Add JavaScript for menu toggle
     document.addEventListener('DOMContentLoaded', () => {
