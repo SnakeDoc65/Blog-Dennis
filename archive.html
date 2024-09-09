@@ -32,13 +32,17 @@
     <p>&copy; 2024 Dennis Ludley</p>
   </footer>
   <script>
-  // Add JavaScript for menu toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav ul');
-
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('showing');
-});
+    // Add JavaScript for menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+    
+      if (menuToggle && nav) {
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('showing');
+        });
+      }
+    });
   </script>
 </body>
 </html>
