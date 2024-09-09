@@ -155,7 +155,6 @@ figcaption {
 }
 
 /* Blog post layout */
-
 .blog-post {
   display: flex;
   flex-direction: row;
@@ -165,7 +164,7 @@ figcaption {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 80%;
+  max-width: 80%; /* Standard Breite */
   margin-left: auto;
   margin-right: auto;
 }
@@ -176,9 +175,9 @@ figcaption {
 }
 
 .post-image {
-  flex: 0 0 300px; /* Vergrößerte Breite für Desktop */
-  max-width: 300px; /* Vergrößerte Breite für Desktop */
-  height: 220px; /* Vergrößerte Höhe für Desktop */
+  flex: 0 0 220px; /* Standard Breite für kleinere Bildschirme */
+  max-width: 220px; /* Standard Breite für kleinere Bildschirme */
+  height: 160px; /* Standard Höhe für kleinere Bildschirme */
   object-fit: cover;
   border-radius: 8px;
   margin-right: 20px;
@@ -188,21 +187,38 @@ figcaption {
   flex: 1;
 }
 
+/* Desktop Styles */
 @media (min-width: 769px) {
   .blog-post {
-    flex-direction: row;
+    max-width: 90%; /* Breiterer Container für größere Bildschirme */
     padding: 40px; /* Erhöhte Polsterung für Desktop */
   }
 
   .post-image {
-    flex: 0 0 350px; /* Noch größere Breite für größere Bildschirme */
-    max-width: 350px;
-    height: 260px;
+    flex: 0 0 350px; /* Vergrößerte Breite für Desktop */
+    max-width: 350px; /* Vergrößerte Breite für Desktop */
+    height: 250px; /* Vergrößerte Höhe für Desktop */
+    align-self: center; /* Zentriert das Bild vertikal im Container */
   }
 }
 
-.post-content {
-  flex: 1;
+@media (max-width: 768px) {
+  .blog-post {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .post-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .post-content {
+    width: 100%;
+  }
 }
 
 .internship-title {
