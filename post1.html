@@ -43,6 +43,7 @@
         <figure>
           <img id="sailing-image" src="Pictures/Picture_Crete_Dia_Sailing.jpg" alt="Sailing Trip to Dia Island" class="sailing-trip-image">
           <figcaption>Our sailing trip to Dia Island</figcaption>
+          <button id="toggle-image" class="toggle-button">&#9664;</button> <!-- Pfeil-Button -->
         </figure>
       </div>
       <section class="comments">
@@ -70,26 +71,26 @@
 
   <!-- JavaScript to toggle mobile menu -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleButton = document.querySelector('.menu-toggle');
-      const navMenu = document.querySelector('nav ul');
-      toggleButton.addEventListener('click', () => {
-        navMenu.classList.toggle('showing');
-      });
-      
-      // JavaScript for toggling the image
-      const sailingImage = document.getElementById('sailing-image');
-      let isOriginal = true;
-      
-      sailingImage.addEventListener('click', function() {
-        if (isOriginal) {
-          sailingImage.src = 'Pictures/Picture__Crete_Dia_Sailing_2.jpg';
-        } else {
-          sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
-        }
-        isOriginal = !isOriginal;
-      });
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
+  toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('showing');
+  });
+  
+  const sailingImage = document.getElementById('sailing-image');
+  const toggleImageButton = document.getElementById('toggle-image');
+  let isOriginal = true;
+  
+  toggleImageButton.addEventListener('click', function() {
+    if (isOriginal) {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+    } else {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+    }
+    isOriginal = !isOriginal;
+  });
+});
   </script>
 </body>
 </html>

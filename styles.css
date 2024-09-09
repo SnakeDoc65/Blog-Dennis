@@ -392,3 +392,26 @@ figcaption {
 .contact-form button:hover {
   background: #005f8a; /* Dunkleres Blau beim Hover */
 }
+figure {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5); /* Halbdurchsichtiger Hintergrund */
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+  z-index: 10; /* Über dem Bild */
+}
+
+.toggle-button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
