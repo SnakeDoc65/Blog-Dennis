@@ -187,7 +187,7 @@ figcaption {
   color: #4a90e2; /* Blau */
   font-size: 3rem; /* Größere Schriftgröße */
   font-weight: bold;
-  text-align: center; /* Zentriert den Titel */
+  text-align: left; /* Zentriert den Titel */
   margin-bottom: 20px;
 }
 
