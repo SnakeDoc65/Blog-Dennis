@@ -6,6 +6,7 @@ body {
   color: #333;
   background: #f4f7f9; /* Helles Grau für den Hintergrund */
   line-height: 1.6;
+  box-sizing: border-box; /* Hilft bei der Kontrolle der Breiten von Elementen */
 }
 
 /* Header Styles */
@@ -15,7 +16,6 @@ header {
   padding: 1rem;
   text-align: center;
   width: 100%;
-  box-sizing: border-box;
 }
 
 header .container {
@@ -196,7 +196,6 @@ figcaption {
   margin-bottom: 20px;
 }
 
-
 /* Responsiv für kleinere Bildschirme */
 @media (max-width: 768px) {
   .blog-post {
@@ -217,20 +216,11 @@ figcaption {
   }
 }
 
-
 /* Karte */
 #map {
   height: 500px; /* Höhe der Karte */
   width: 100%; /* Volle Breite */
   margin: 20px 0; /* Abstand oben und unten */
-}
-
-/* General Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box; /* Hilft bei der Kontrolle der Breiten von Elementen */
 }
 
 /* Comments Section Styles */
@@ -318,11 +308,11 @@ body {
 /* Responsive Styles for Comments */
 @media (max-width: 768px) {
   .comments {
-      padding: 10px;
+    padding: 10px;
   }
 
   .comments h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -333,10 +323,6 @@ body {
   height: auto; /* Verhältnis beibehalten */
   display: block;
   margin: 0 auto; /* Zentrieren des Bildes */
-}
-
-#sailing-image {
-  cursor: pointer; /* Zeigt an, dass das Bild anklickbar ist */
 }
 
 /* Stil für das Bild vom Arbeitsplatz */
@@ -405,15 +391,4 @@ body {
 
 .contact-form button:hover {
   background: #005f8a; /* Dunkleres Blau beim Hover */
-}
-
-/* Responsive Anpassungen für das Kontaktformular */
-@media (max-width: 768px) {
-  .contact-form {
-      padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
-  }
-}
-Stil für den Hinweis/Pfeil */
-#sailing-image {
-  cursor: pointer; /* Zeigt an, dass das Bild anklickbar ist */
 }
