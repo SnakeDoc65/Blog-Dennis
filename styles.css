@@ -328,6 +328,15 @@ figcaption {
   margin: 0 auto;
 }
 
+.medium-large-image {
+  width: 70%; /* Breite auf 70% der Containerbreite */
+  max-width: 600px; /* Maximale Breite auf 600 Pixel begrenzen */
+  height: auto; /* Verhältnis beibehalten */
+  display: block;
+  margin: 0 auto; /* Zentrieren des Bildes */
+}
+
+
 /* Stil für das Bild vom Arbeitsplatz */
 .workplace-image {
   width: 60%;
