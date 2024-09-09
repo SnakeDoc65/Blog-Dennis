@@ -183,13 +183,19 @@ figcaption {
 }
 
 .internship-title {
-  color: #4a90e2; /* Blau */
-  font-size: 3rem; /* Größere Schriftgröße */
+  color: #4a90e2; /* Blau, passend zum Header und Footer */
+  font-size: 3rem; /* Größere Schriftgröße für den Titel */
   font-weight: bold;
-  text-align: center; /* Zentriert den Titel */
-  margin-top: 50px; /* Abstand vom Header */
-  margin-bottom: 40px; /* Abstand zum Text */
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
 
 /* Responsiv für kleinere Bildschirme */
 @media (max-width: 768px) {
@@ -320,13 +326,14 @@ body {
   }
 }
 
-/* Style for workplace image */
-.workplace-image {
-  width: 60%; /* Bild auf 60% der Containerbreite setzen */
-  max-width: 600px; /* Maximale Breite von 600 Pixeln */
-  height: auto; /* Verhältnis beibehalten */
+.sailing-image, .workplace-image {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
   display: block;
-  margin: 0 auto; /* Zentrieren des Bildes */
+  margin: 20px auto; /* Zentriert das Bild */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive adjustment for smaller screens */
