@@ -155,6 +155,7 @@ figcaption {
 }
 
 /* Blog post layout */
+
 .blog-post {
   display: flex;
   flex-direction: row;
@@ -175,12 +176,29 @@ figcaption {
 }
 
 .post-image {
-  flex: 0 0 220px;
-  max-width: 220px;
-  height: 160px;
+  flex: 0 0 300px; /* Vergrößerte Breite für Desktop */
+  max-width: 300px; /* Vergrößerte Breite für Desktop */
+  height: 220px; /* Vergrößerte Höhe für Desktop */
   object-fit: cover;
   border-radius: 8px;
   margin-right: 20px;
+}
+
+.post-content {
+  flex: 1;
+}
+
+@media (min-width: 769px) {
+  .blog-post {
+    flex-direction: row;
+    padding: 40px; /* Erhöhte Polsterung für Desktop */
+  }
+
+  .post-image {
+    flex: 0 0 350px; /* Noch größere Breite für größere Bildschirme */
+    max-width: 350px;
+    height: 260px;
+  }
 }
 
 .post-content {
