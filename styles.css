@@ -134,14 +134,18 @@ footer p {
 
 /* Bildstile */
 figure {
-  margin: 20px 0;
+  position: relative;
+  display: inline-block;
   text-align: center;
+  margin: 20px 0;
 }
 
 figure img {
   max-width: 100%; /* Bild soll sich der Breite des Containers anpassen */
   height: auto; /* Höhe automatisch anpassen */
   border-radius: 8px; /* Abgerundete Ecken */
+  display: block; /* Sicherstellen, dass das Bild als Blockelement behandelt wird */
+  margin: 0 auto; /* Bild horizontal zentrieren */
 }
 
 figcaption {
@@ -393,11 +397,7 @@ figcaption {
   background: #005f8a; /* Dunkleres Blau beim Hover */
 }
 
-figure {
-  position: relative;
-  display: inline-block;
-}
-
+/* Pfeil-Button für Bilder */
 .toggle-button {
   position: absolute;
   top: 50%;
@@ -423,4 +423,3 @@ figure {
 .toggle-button:hover {
   background: rgba(255, 255, 255, 0.8);
 }
-
