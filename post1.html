@@ -86,14 +86,17 @@ document.addEventListener('DOMContentLoaded', function () {
   toggleImageButton.addEventListener('click', function() {
     if (isOriginal) {
       sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
-      sailingImage.classList.add('medium-large-image'); // Klasse hinzufügen
+      sailingImage.classList.remove('medium-large-image');
+      sailingImage.classList.add('sailing-trip-image');
     } else {
       sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
-      sailingImage.classList.remove('medium-large-image'); // Klasse entfernen
+      sailingImage.classList.remove('sailing-trip-image');
+      sailingImage.classList.add('medium-large-image');
     }
     isOriginal = !isOriginal;
   });
 });
+
 
 
   </script>
