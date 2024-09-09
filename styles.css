@@ -326,20 +326,32 @@ body {
   }
 }
 
-.sailing-image, .workplace-image {
-  width: 80%;
-  max-width: 800px;
-  height: auto;
+/* Stil für das Bild von der Segeltour */
+.sailing-trip-image {
+  width: 50%; /* Bild auf 50% der Containerbreite setzen */
+  max-width: 500px; /* Maximale Breite von 500 Pixeln */
+  height: auto; /* Verhältnis beibehalten */
   display: block;
-  margin: 20px auto; /* Zentriert das Bild */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Zentrieren des Bildes */
 }
 
-/* Responsive adjustment for smaller screens */
+/* Stil für das Bild vom Arbeitsplatz */
+.workplace-image {
+  width: 60%; /* Bild auf 60% der Containerbreite setzen */
+  max-width: 600px; /* Maximale Breite von 600 Pixeln */
+  height: auto; /* Verhältnis beibehalten */
+  display: block;
+  margin: 0 auto; /* Zentrieren des Bildes */
+}
+
+/* Responsive Anpassung für kleinere Bildschirme */
 @media (max-width: 768px) {
   .workplace-image {
-      width: 80%; /* Auf mobilen Geräten etwas größer anzeigen */
+    width: 80%; /* Auf mobilen Geräten etwas größer anzeigen */
+  }
+
+  .sailing-trip-image {
+    width: 80%; /* Auf mobilen Geräten etwas größer anzeigen */
   }
 }
 
