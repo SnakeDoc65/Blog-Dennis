@@ -340,8 +340,8 @@ figcaption {
 
 @media (max-width: 768px) {
   .medium-large-image {
-    width: 100%; /* Breite auf mobilen Geräten auf 100% der Containerbreite */
-    max-width: 100%; /* Maximale Breite auf mobilen Geräten auf 100% setzen */
+    width: 105%; /* Erhöht die Breite auf 105% der Containerbreite auf mobilen Geräten */
+    max-width: none; /* Maximale Breite entfernen, um die Containerbreite zu überschreiten */
   }
 }
 
