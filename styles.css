@@ -4,10 +4,14 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background: #f4f7f9;
+  background-image: url('Pictures/Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   line-height: 1.6;
   box-sizing: border-box;
 }
+
 
 /* Header Styles */
 header {

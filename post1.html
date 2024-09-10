@@ -73,12 +73,6 @@
   <!-- JavaScript to toggle mobile menu -->
   <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const toggleButton = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('nav ul');
-  toggleButton.addEventListener('click', () => {
-    navMenu.classList.toggle('showing');
-  });
-  
   const sailingImage = document.getElementById('sailing-image');
   const toggleImageButton = document.getElementById('toggle-image');
   let isOriginal = true;
@@ -86,16 +80,15 @@ document.addEventListener('DOMContentLoaded', function () {
   toggleImageButton.addEventListener('click', function() {
     if (isOriginal) {
       sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
-      sailingImage.classList.remove('medium-large-image');
-      sailingImage.classList.add('sailing-trip-image');
+      sailingImage.className = 'medium-large-image'; // Setzt die Klasse korrekt
     } else {
       sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
-      sailingImage.classList.remove('sailing-trip-image');
-      sailingImage.classList.add('medium-large-image');
+      sailingImage.className = 'sailing-trip-image'; // Setzt die Klasse korrekt
     }
-    isOriginal = !isOriginal;
+    isOriginal = !isOriginal; // Bild umschalten
   });
 });
+
 
 
 
