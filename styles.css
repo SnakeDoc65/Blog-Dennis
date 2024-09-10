@@ -506,3 +506,32 @@ figcaption {
 .collage-visible {
   opacity: 1;
 }
+
+/* Stil für die Collage-Bilder */
+.collage-container {
+  position: fixed; /* Fixiert die Position der Collage */
+  bottom: 0; /* Am unteren Rand des Bildschirms */
+  left: 0; /* Links ausrichten */
+  width: 100%; /* Die gesamte Breite des Bildschirms */
+  display: flex; /* Flexbox für die horizontale Anordnung */
+  justify-content: space-between; /* Platz zwischen den Bildern */
+  opacity: 0; /* Standardmäßig unsichtbar */
+  transition: opacity 0.5s ease; /* Sanfter Übergang */
+}
+
+.collage-container.collage-visible {
+  opacity: 1; /* Sichtbar, wenn das Event ausgelöst wird */
+}
+
+.collage-image {
+  width: 50%; /* Jedes Bild nimmt 50% des Bildschirms ein */
+  height: auto; /* Höhe automatisch anpassen */
+}
+
+.left {
+  object-fit: cover;
+}
+
+.right {
+  object-fit: cover;
+}
