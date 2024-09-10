@@ -93,39 +93,40 @@
         <img src="Pictures/Bild2.png" alt="Collage Bild 2" class="collage-image right">
     </div>
 
-    <!-- JavaScript to toggle mobile menu and handle collage visibility -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggleButton = document.querySelector('.menu-toggle');
-            const navMenu = document.querySelector('nav ul');
-            const collage = document.getElementById('collage');
-            const footer = document.querySelector('footer');
-            let lastScrollTop = 0; // To keep track of the last scroll position
-        
-            toggleButton.addEventListener('click', () => {
-                navMenu.classList.toggle('showing');
-            });
-        
-            window.addEventListener('scroll', function() {
-                const footerRect = footer.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
-                const scrollTop = window.scrollY || window.pageYOffset;
-        
-                // Check if user is scrolling down
-                if (scrollTop > lastScrollTop) {
-                    // When the footer is almost in the viewport
-                    if (footerRect.top <= windowHeight) {
-                        collage.classList.add('collage-visible');
-                    }
-                } else {
-                    // User is scrolling up
-                    collage.classList.remove('collage-visible');
-                }
-        
-                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-            });
+<!-- JavaScript to toggle mobile menu and handle collage visibility -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+        const collage = document.getElementById('collage');
+        const footer = document.querySelector('footer');
+        let footerOutOfView = false; // To track if footer is out of view
+
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('showing');
         });
-    </script>
+
+        window.addEventListener('scroll', function() {
+            const footerRect = footer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Check if footer is out of view (not in the visible viewport)
+            if (footerRect.bottom < 0) {
+                footerOutOfView = true;
+            } else {
+                footerOutOfView = false;
+            }
+
+            // When the footer is out of view, show the collage
+            if (footerOutOfView) {
+                collage.classList.add('collage-visible');
+            } else {
+                collage.classList.remove('collage-visible');
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>
