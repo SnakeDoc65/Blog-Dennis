@@ -480,34 +480,4 @@ figcaption {
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* Container für die Collagen-Bilder */
-.collage-container {
-  position: fixed; /* Fixiert die Position der Collage */
-  bottom: 0; /* Am unteren Rand des Bildschirms */
-  left: 0; /* Links ausrichten */
-  width: 100%; /* Die gesamte Breite des Bildschirms */
-  height: 50%; /* Höhe auf 50% setzen */
-  display: flex; /* Flexbox für die horizontale Anordnung */
-  justify-content: space-between; /* Platz zwischen den Bildern */
-  opacity: 0; /* Standardmäßig unsichtbar */
-  transition: opacity 0.5s ease, visibility 0.5s ease; /* Sanfter Übergang */
-  visibility: hidden; /* Sicherstellen, dass die Collage unsichtbar ist */
-  pointer-events: none; /* Verhindert Interaktion mit den Bildern */
-  z-index: 1000; /* Sicherstellen, dass die Collage über anderen Inhalten liegt */
-}
 
-/* Stil für die Sichtbarkeit der Collagen */
-.collage-container.collage-visible {
-  opacity: 1; /* Sichtbar, wenn das Event ausgelöst wird */
-  visibility: visible; /* Sicherstellen, dass die Collage sichtbar ist */
-}
-
-
-
-.left {
-  object-fit: cover;
-}
-
-.right {
-  object-fit: cover;
-}

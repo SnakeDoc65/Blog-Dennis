@@ -87,40 +87,6 @@
         <p>&copy; 2024 Dennis Ludley</p>
     </footer>
 
-    <!-- Collage-Bilder -->
-    <div class="collage-container" id="collage">
-        <img src="Pictures/Bild1.png" alt="Collage Bild 1" class="collage-image left">
-        <img src="Pictures/Bild2.png" alt="Collage Bild 2" class="collage-image right">
-    </div>
-
-<!-- JavaScript to toggle mobile menu and handle collage visibility -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const toggleButton = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('nav ul');
-        const collage = document.getElementById('collage');
-        const footer = document.querySelector('footer');
-
-        toggleButton.addEventListener('click', () => {
-            navMenu.classList.toggle('showing');
-        });
-
-        window.addEventListener('scroll', function() {
-            const footerRect = footer.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-
-            // Log die Werte zur Fehlersuche
-            console.log(`Footer bottom: ${footerRect.bottom}, Window height: ${windowHeight}`);
-            
-            // Check if footer is out of view (not in the visible viewport)
-            if (footerRect.bottom <= 0) {
-                collage.classList.add('collage-visible');
-            } else {
-                collage.classList.remove('collage-visible');
-            }
-        });
-    });
-</script>
 
 
 
