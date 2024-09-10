@@ -100,7 +100,6 @@
         const navMenu = document.querySelector('nav ul');
         const collage = document.getElementById('collage');
         const footer = document.querySelector('footer');
-        let footerOutOfView = false; // To track if footer is out of view
 
         toggleButton.addEventListener('click', () => {
             navMenu.classList.toggle('showing');
@@ -111,14 +110,7 @@
             const windowHeight = window.innerHeight;
 
             // Check if footer is out of view (not in the visible viewport)
-            if (footerRect.bottom < 0) {
-                footerOutOfView = true;
-            } else {
-                footerOutOfView = false;
-            }
-
-            // When the footer is out of view, show the collage
-            if (footerOutOfView) {
+            if (footerRect.bottom <= 0) {
                 collage.classList.add('collage-visible');
             } else {
                 collage.classList.remove('collage-visible');
@@ -126,6 +118,7 @@
         });
     });
 </script>
+
 
 </body>
 

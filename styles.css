@@ -482,52 +482,30 @@ figcaption {
 
 /* Container für die Collagen-Bilder */
 .collage-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 0; /* Initial unsichtbar */
-  transition: opacity 0.5s ease-in-out;
-  z-index: 1000;
-}
-
-/* Stil für die einzelnen Bilder */
-.collage-image {
-  width: 50%;
-  height: auto;
-  display: block;
-}
-
-/* Stile für die Sichtbarkeit der Collagen */
-.collage-visible {
-  opacity: 1;
-}
-
-/* Stil für die Collage-Bilder */
-.collage-container {
   position: fixed; /* Fixiert die Position der Collage */
   bottom: 0; /* Am unteren Rand des Bildschirms */
   left: 0; /* Links ausrichten */
   width: 100%; /* Die gesamte Breite des Bildschirms */
+  height: 50%; /* Höhe auf 50% setzen */
   display: flex; /* Flexbox für die horizontale Anordnung */
   justify-content: space-between; /* Platz zwischen den Bildern */
   opacity: 0; /* Standardmäßig unsichtbar */
   transition: opacity 0.5s ease; /* Sanfter Übergang */
   pointer-events: none; /* Verhindert Interaktion mit den Bildern */
+  z-index: 1000; /* Sicherstellen, dass die Collage über anderen Inhalten liegt */
 }
 
+/* Stil für die Sichtbarkeit der Collagen */
 .collage-container.collage-visible {
   opacity: 1; /* Sichtbar, wenn das Event ausgelöst wird */
 }
 
+/* Stil für die einzelnen Bilder */
 .collage-image {
   width: 50%; /* Jedes Bild nimmt 50% des Bildschirms ein */
   height: auto; /* Höhe automatisch anpassen */
 }
+
 
 
 .left {
