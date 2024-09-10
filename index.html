@@ -109,6 +109,9 @@
             const footerRect = footer.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
+            // Log die Werte zur Fehlersuche
+            console.log(`Footer bottom: ${footerRect.bottom}, Window height: ${windowHeight}`);
+            
             // Check if footer is out of view (not in the visible viewport)
             if (footerRect.bottom <= 0) {
                 collage.classList.add('collage-visible');
@@ -118,6 +121,7 @@
         });
     });
 </script>
+
 
 
 </body>
