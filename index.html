@@ -30,6 +30,25 @@
                 </ul>
             </nav>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const collage = document.getElementById('collage');
+                const footer = document.querySelector('footer');
+        
+                window.addEventListener('scroll', function() {
+                    const footerRect = footer.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+        
+                    // Wenn der Footer fast aus dem Sichtbereich verschwindet
+                    if (footerRect.top <= windowHeight) {
+                        collage.classList.add('collage-visible');
+                    } else {
+                        collage.classList.remove('collage-visible');
+                    }
+                });
+            });
+        </script>
+        
     </header>
 
     <main class="container">
@@ -59,6 +78,13 @@
     <footer>
         <p>&copy; 2024 Dennis Ludley</p>
     </footer>
+
+    <!-- Collage-Bilder -->
+<div class="collage-container" id="collage">
+    <img src="Pictures/Bild1.png" alt="Collage Bild 1" class="collage-image">
+    <img src="Pictures/Bild2.png" alt="Collage Bild 2" class="collage-image">
+</div>
+
 
     <!-- JavaScript to toggle mobile menu -->
     <script>
