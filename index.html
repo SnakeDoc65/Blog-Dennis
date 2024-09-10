@@ -66,28 +66,36 @@
         <img src="Pictures/Bild2.png" alt="Collage Bild 2" class="collage-image right">
     </div>
 
-    <!-- JavaScript to toggle mobile menu -->
+    <!-- JavaScript to toggle mobile menu and handle collage visibility -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const toggleButton = document.querySelector('.menu-toggle');
             const navMenu = document.querySelector('nav ul');
+            const collage = document.getElementById('collage');
+            const footer = document.querySelector('footer');
+            let lastScrollTop = 0; // To keep track of the last scroll position
+        
             toggleButton.addEventListener('click', () => {
                 navMenu.classList.toggle('showing');
             });
-
-            const collage = document.getElementById('collage');
-            const footer = document.querySelector('footer');
         
             window.addEventListener('scroll', function() {
                 const footerRect = footer.getBoundingClientRect();
                 const windowHeight = window.innerHeight;
+                const scrollTop = window.scrollY || window.pageYOffset;
         
-                // Wenn der Footer fast aus dem Sichtbereich verschwindet
-                if (footerRect.top <= windowHeight) {
-                    collage.classList.add('collage-visible');
+                // Check if user is scrolling down
+                if (scrollTop > lastScrollTop) {
+                    // When the footer is almost in the viewport
+                    if (footerRect.top <= windowHeight) {
+                        collage.classList.add('collage-visible');
+                    }
                 } else {
+                    // User is scrolling up
                     collage.classList.remove('collage-visible');
                 }
+        
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
             });
         });
     </script>

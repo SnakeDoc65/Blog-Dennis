@@ -517,6 +517,7 @@ figcaption {
   justify-content: space-between; /* Platz zwischen den Bildern */
   opacity: 0; /* Standardmäßig unsichtbar */
   transition: opacity 0.5s ease; /* Sanfter Übergang */
+  pointer-events: none; /* Verhindert Interaktion mit den Bildern */
 }
 
 .collage-container.collage-visible {
@@ -527,6 +528,7 @@ figcaption {
   width: 50%; /* Jedes Bild nimmt 50% des Bildschirms ein */
   height: auto; /* Höhe automatisch anpassen */
 }
+
 
 .left {
   object-fit: cover;
