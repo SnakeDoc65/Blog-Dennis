@@ -131,6 +131,9 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
+  position: relative; /* Stelle sicher, dass es nicht fixiert ist */
+  width: 100%;
+  bottom: 0;
 }
 
 footer p {
