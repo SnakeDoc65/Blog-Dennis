@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Fügt Roboto als Standard-Schriftart hinzu */
   margin: 0;
   padding: 0;
   color: #333;
@@ -11,7 +11,6 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
 }
-
 
 /* Header Styles */
 header {
@@ -30,6 +29,14 @@ header .container {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
 }
 
 /* Navigation Styles */
@@ -62,6 +69,7 @@ nav a:hover {
   background-color: #005f8a;
   transform: scale(1.05);
 }
+
 
 /* Hamburger Menu for Mobile */
 .menu-toggle {
