@@ -21,7 +21,7 @@
             <h1>My Personal Blog</h1>
             <button class="menu-toggle">Menu</button> <!-- Added menu toggle button -->
             <nav>
-                <ul>
+          <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -60,36 +60,15 @@
         <p>&copy; 2024 Dennis Ludley</p>
     </footer>
 
-    <!-- Collage-Bilder -->
-    <div class="collage-container" id="collage">
-        <img src="Pictures/Bild1.png" alt="Collage Bild 1" class="collage-image">
-        <img src="Pictures/Bild2.png" alt="Collage Bild 2" class="collage-image">
-    </div>
+    
 
-    <!-- JavaScript to toggle mobile menu and handle collage visibility -->
+    <!-- JavaScript to toggle mobile menu -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Handle mobile menu toggle
             const toggleButton = document.querySelector('.menu-toggle');
             const navMenu = document.querySelector('nav ul');
             toggleButton.addEventListener('click', () => {
                 navMenu.classList.toggle('showing');
-            });
-
-            // Handle collage visibility on scroll
-            const collage = document.getElementById('collage');
-            const footer = document.querySelector('footer');
-        
-            window.addEventListener('scroll', function() {
-                const footerRect = footer.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
-        
-                // Wenn der Footer fast aus dem Sichtbereich verschwindet
-                if (footerRect.top <= windowHeight) {
-                    collage.classList.add('collage-visible');
-                } else {
-                    collage.classList.remove('collage-visible');
-                }
             });
         });
     </script>
