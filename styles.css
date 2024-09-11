@@ -10,8 +10,10 @@ body {
   background-attachment: fixed;
   line-height: 1.6;
   box-sizing: border-box;
+  overflow-x: hidden; /* Vermeidet seitliches Scrollen */
   width: 100%;
 }
+
 
 /* Header Styles */
 header {
@@ -503,21 +505,21 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  width: 100%; /* Stellt sicher, dass der Footer die volle Breite hat */
+  width: 100%; /* Sicherstellen, dass der Footer die gesamte Breite einnimmt */
   box-sizing: border-box;
   position: relative;
   bottom: 0;
 }
 
-/* Responsive Footer Styles */
 @media (max-width: 768px) {
   footer {
-    padding: 1rem 0.5rem; /* Etwas weniger Padding auf mobilen Geräten */
+    padding: 1rem 0.5rem; /* Reduziertes Padding für mobile Geräte */
   }
 
   footer p {
     font-size: 0.8rem; /* Kleinere Schriftgröße für mobile Geräte */
   }
 }
+
 
 
