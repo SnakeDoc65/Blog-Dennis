@@ -490,7 +490,6 @@ figcaption {
 .toggle-button {
   position: absolute;
   top: 50%;
-  right: 10px;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.5);
   border: none;
@@ -511,6 +510,14 @@ figcaption {
 
 .toggle-button:hover {
   background: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-button.left {
+  left: 10px;
+}
+
+.toggle-button.right {
+  right: 10px;
 }
 
 /* Karte */
