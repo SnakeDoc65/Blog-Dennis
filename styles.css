@@ -88,12 +88,13 @@ nav a:hover {
   padding: 10px;
   font-size: 1rem;
   cursor: pointer;
+  z-index: 1000; /* Hoher Z-Index, damit der Button oben liegt */
 }
 
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    margin-left: -10px; /* Verschiebt den Menü-Button minimal nach links */
+    margin-left: -9px; /* Verschiebt den Menü-Button minimal nach links */
   }
 
   nav ul {
@@ -104,6 +105,7 @@ nav a:hover {
     position: absolute;
     top: 60px;
     left: 0;
+    z-index: 999; /* Z-Index für das Dropdown-Menü */
   }
 
   nav ul.showing {
@@ -120,6 +122,7 @@ nav a:hover {
     text-align: center;
   }
 }
+
 
 /* Main Content Styles */
 main {
