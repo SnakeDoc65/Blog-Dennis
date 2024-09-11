@@ -515,26 +515,17 @@ figcaption {
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* Hauptcontainer für Flexbox-Zentrierung */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Optional, falls vertikale Zentrierung erforderlich ist */
-  width: 100%;
-}
-
-/* Map-Container */
-.map-container {
-  width: 90vw;       /* Breite relativ zur Viewport-Breite */
-  max-width: 1200px; /* Maximale Breite für sehr große Bildschirme */
-  margin: 20px;      /* Abstand oben und unten */
-}
-
 /* Karte */
 #map {
   height: 500px; /* Standardhöhe */
   width: 100%;   /* Breite auf mobilen Geräten */
   margin: 0;     /* Keine zusätzlichen Margen */
+}
+
+.map-container {
+  width: 90vw;       /* Breite relativ zur Viewport-Breite */
+  max-width: 1200px; /* Maximale Breite für sehr große Bildschirme */
+  margin: 20px auto; /* Zentriert den Container horizontal und gibt oben und unten Abstand */
 }
 
 /* Desktop Styles */
