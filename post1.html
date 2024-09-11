@@ -76,28 +76,41 @@
 
 <!-- JavaScript to toggle mobile menu and image -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggleButton = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
-  
-    toggleButton.addEventListener('click', () => {
-      navMenu.classList.toggle('showing');
-    });
-  
-    // Bild umschalten
-    const sailingImage = document.getElementById('sailing-image');
-    const toggleImageButton = document.getElementById('toggle-image');
-    let isOriginal = true;
-  
-    toggleImageButton.addEventListener('click', function() {
-      if (isOriginal) {
-        sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
-      } else {
-        sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
-      }
-      isOriginal = !isOriginal; // Bild umschalten
-    });
+ document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
+
+  toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('showing');
   });
+
+  // Bild umschalten
+  const sailingImage = document.getElementById('sailing-image');
+  const toggleImageButton = document.getElementById('toggle-image');
+  const backButton = document.getElementById('back-button');
+  let isOriginal = true;
+
+  // Event-Listener für den rechten Button (Bild vorwärts)
+  toggleImageButton.addEventListener('click', function() {
+    if (isOriginal) {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+    } else {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+    }
+    isOriginal = !isOriginal; // Bild umschalten
+  });
+
+  // Event-Listener für den linken Button (Bild zurück)
+  backButton.addEventListener('click', function() {
+    if (isOriginal) {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+    } else {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+    }
+    isOriginal = !isOriginal; // Bild umschalten
+  });
+});
+
   </script>
 </body>
 </html>
