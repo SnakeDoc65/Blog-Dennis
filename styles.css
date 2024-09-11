@@ -518,6 +518,18 @@ figcaption {
   left: -50px; /* Position des linken Buttons */
 }
 
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+  .right-button {
+    right: 10px; /* Rechts nach innen verschieben */
+  }
+
+  .left-button {
+    left: 10px; /* Links nach innen verschieben */
+  }
+}
+
+
 
 /* Karte */
 .map-page #map {
