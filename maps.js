@@ -29,7 +29,8 @@ var markers = [
     { lat: 48.1351, lng: 11.5820, popup: "Munich, Germany" },
     { lat: 45.8150, lng: 15.9819, popup: "Zagreb, Croatia" },
     { lat: 36.7820, lng: 31.3942, popup: "Side, Turkey" },
-    { lat: 48.8566, lng: 2.3522, popup: "Paris, France" }
+    { lat: 48.8566, lng: 2.3522, popup: "Paris, France" },
+    { lat: 47.7472, lng: 10.7041, popup: "Hopfen am See, Germany" }
 ];
 
 markers.forEach(function(marker) {
