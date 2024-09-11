@@ -511,11 +511,11 @@ figcaption {
 }
 
 .right-button {
-  right: -50px; /* Position des rechten Buttons */
+  right: 20px; /* Position des rechten Buttons auf Desktop angepasst */
 }
 
 .left-button {
-  left: -50px; /* Position des linken Buttons */
+  left: 20px; /* Position des linken Buttons auf Desktop angepasst */
 }
 
 /* Anpassungen für mobile Geräte */
