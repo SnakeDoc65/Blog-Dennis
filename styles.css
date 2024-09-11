@@ -525,8 +525,8 @@ figcaption {
 /* Desktop Styles */
 @media (min-width: 769px) {
   #map {
-    height: 700px; /* Erhöhte Höhe für größere Bildschirme */
-    width: 90%;    /* Breite auf größeren Bildschirmen */
+    height: 60vh;      /* Höhe relativ zur Viewport-Höhe */
+    width: 90vw;       /* Breite relativ zur Viewport-Breite */
     max-width: 1200px; /* Maximale Breite für sehr große Bildschirme */
     margin: 20px auto; /* Zentriert die Karte horizontal auf Desktop */
   }
