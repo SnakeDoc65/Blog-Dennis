@@ -8,18 +8,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>My Personal Blog</h1>
-      <button class="menu-toggle">Menu</button> <!-- Added menu toggle button -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="archive.html">Archive</a></li>
-          <li><a href="places.html">Places Where I've Been</a></li>
-        </ul>
+<header>
+<div class="container">
+ <h1>My Personal Blog</h1>
+<button class="menu-toggle">Menu</button> <!-- Added menu toggle button -->
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="archive.html">Archive</a></li>
+    <li><a href="places.html">Places Where I've Been</a></li>
+  </ul>
       </nav>
     </div>
   </header>
@@ -57,32 +57,30 @@
             <label for="comment">Comment:</label>
             <textarea id="comment" name="comment" required></textarea>
             
-            <button type="submit">Submit Comment</button>
-        </form>
-        <!-- Bereich für bestehende Kommentare -->
-        <div class="comment-list">
-            <!-- Hier werden die bestehenden Kommentare angezeigt -->
-        </div>
-    </section>
-    
-    </article>
-  </main>
-  <footer>
-    <p>&copy; 2024 Dennis Ludley</p>
-  </footer>
+<button type="submit">Submit Comment</button>
+</form>
+<!-- Bereich für bestehende Kommentare -->
+<div class="comment-list">
+    <!-- Hier werden die bestehenden Kommentare angezeigt -->
+</div>
+</section>
 
-<!-- JavaScript to toggle mobile menu and image -->
+</article>
+</main>
+<footer>
+<p>&copy; 2024 Dennis Ludley</p>
+</footer>
+
+<!-- JavaScript to toggle mobile menu -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Function to toggle mobile menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
-    
-    menuToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('showing');
-    });
+document.addEventListener('DOMContentLoaded', function () {
+const toggleButton = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('nav ul');
+toggleButton.addEventListener('click', () => {
+navMenu.classList.toggle('showing');
+});
   
-    // Function to toggle image
+  // Function to toggle image
     const sailingImage = document.getElementById('sailing-image');
     const toggleImageButton = document.getElementById('toggle-image');
     let isOriginal = true;
@@ -96,9 +94,8 @@
         sailingImage.className = 'sailing-trip-image'; // Setzt die Klasse korrekt
       }
       isOriginal = !isOriginal; // Bild umschalten
-    });
+ });
   });
   </script>
-  
 </body>
 </html>
