@@ -395,25 +395,17 @@ figcaption {
 
 /* Stil für das Bild von der Segeltour */
 .sailing-trip-image {
-  width: 100%;           /* Breite des Bildes auf 50% des Containers */
-  max-width: none;      /* Maximale Breite */
-  height: auto;          /* Höhe automatisch, um das Seitenverhältnis zu bewahren */
-  display: block;        /* Block-Darstellung, um den margin-Effekt anzuwenden */
-  margin: 0 auto;        /* Zentriert das Bild horizontal */
-}
-
-/* Responsive Anpassung für kleinere Bildschirme */
-@media (max-width: 768px) {
-  .sailing-trip-image {
-    width: 70%;         /* Breite des Bildes auf kleineren Bildschirmen erhöhen */
-    max-width: none;     /* Keine maximale Breite auf mobilen Geräten */
-  }
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Stil für die Medium-Large-Bilder */
 .medium-large-image {
-  width: 85%;           /* Breite auf Desktop-Geräten */
-  max-width: 700px;     /* Maximale Breite */
+  width: 85%; /* Breite auf Desktop-Geräten */
+  max-width: 700px; /* Maximale Breite */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -421,16 +413,30 @@ figcaption {
 
 @media (max-width: 768px) {
   .medium-large-image {
-    width: 105%;        /* Breite auf mobilen Geräten erhöhen */
-    max-width: none;     /* Keine maximale Breite */
+    width: 105%; /* Erhöht die Breite auf mobilen Geräten */
+    max-width: none; /* Entfernt die maximale Breite */
   }
 }
 
 /* Stil für das Bild vom Arbeitsplatz */
 .workplace-image {
-  width: 60%;           /* Breite des Bildes auf 60% des Containers */
-  max-width: 600px;     /* Maxim
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
+/* Responsive Anpassung für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .workplace-image {
+    width: 80%;
+  }
+
+  .sailing-trip-image {
+    width: 80%;
+  }
+}
 
 /* Kontaktformular Stile */
 .contact-form {
@@ -480,6 +486,7 @@ figcaption {
   background: #005f8a;
 }
 
+/* Pfeil-Button für Bilder */
 .toggle-button {
   width: 40px;
   height: 40px;
