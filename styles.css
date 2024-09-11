@@ -503,11 +503,11 @@ figcaption {
 }
 
 .right-button {
-  right: 20px; /* Position des rechten Buttons auf Desktop angepasst */
+  right: 27px; /* Position des rechten Buttons auf Desktop angepasst */
 }
 
 .left-button {
-  left: 20px; /* Position des linken Buttons auf Desktop angepasst */
+  left: 27px; /* Position des linken Buttons auf Desktop angepasst */
 }
 
 /* Anpassungen für mobile Geräte */
