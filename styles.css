@@ -519,16 +519,19 @@ figcaption {
 #map {
   height: 500px; /* Standardhöhe */
   width: 100%;   /* Breite auf mobilen Geräten */
-  margin: 20px 0; /* Abstand oben und unten */
+  margin: 0;     /* Keine zusätzlichen Margen */
+}
+
+.map-container {
+  width: 90vw;       /* Breite relativ zur Viewport-Breite */
+  max-width: 1200px; /* Maximale Breite für sehr große Bildschirme */
+  margin: 20px auto; /* Zentriert den Container horizontal und gibt oben und unten Abstand */
 }
 
 /* Desktop Styles */
 @media (min-width: 769px) {
   #map {
-    height: 60vh;      /* Höhe relativ zur Viewport-Höhe */
-    width: 90vw;       /* Breite relativ zur Viewport-Breite */
-    max-width: 1200px; /* Maximale Breite für sehr große Bildschirme */
-    margin: 20px auto; /* Zentriert die Karte horizontal und gibt oben und unten Abstand */
+    height: 60vh; /* Höhe relativ zur Viewport-Höhe */
+    width: 100%;  /* Breite auf größeren Bildschirmen */
   }
 }
-
