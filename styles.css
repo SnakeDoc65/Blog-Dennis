@@ -514,3 +514,17 @@ figcaption {
 .toggle-button:hover {
   background: rgba(255, 255, 255, 0.8);
 }
+
+/* map */
+#map {
+  height: 500px; /* Standardhöhe */
+  width: 100%;   /* Breite auf mobilen Geräten */
+  margin: 20px 0;
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  #map {
+    height: 700px; /* Erhöhte Höhe für größere Bildschirme */
+  }
+}
