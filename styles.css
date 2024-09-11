@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
   line-height: 1.6;
   box-sizing: border-box;
+  width: 100%;
 }
 
 /* Header Styles */
@@ -502,7 +503,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  width: 100%;
+  width: 100%; /* Stellt sicher, dass der Footer die volle Breite hat */
   box-sizing: border-box;
   position: relative;
   bottom: 0;
