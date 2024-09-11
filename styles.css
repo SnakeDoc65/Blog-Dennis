@@ -395,17 +395,25 @@ figcaption {
 
 /* Stil für das Bild von der Segeltour */
 .sailing-trip-image {
-  width: 50%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 50%;           /* Breite des Bildes auf 50% des Containers */
+  max-width: 500px;      /* Maximale Breite */
+  height: auto;          /* Höhe automatisch, um das Seitenverhältnis zu bewahren */
+  display: block;        /* Block-Darstellung, um den margin-Effekt anzuwenden */
+  margin: 0 auto;        /* Zentriert das Bild horizontal */
+}
+
+/* Responsive Anpassung für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .sailing-trip-image {
+    width: 80%;         /* Breite des Bildes auf kleineren Bildschirmen erhöhen */
+    max-width: none;     /* Keine maximale Breite auf mobilen Geräten */
+  }
 }
 
 /* Stil für die Medium-Large-Bilder */
 .medium-large-image {
-  width: 85%; /* Breite auf Desktop-Geräten */
-  max-width: 700px; /* Maximale Breite */
+  width: 85%;           /* Breite auf Desktop-Geräten */
+  max-width: 700px;     /* Maximale Breite */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -413,30 +421,16 @@ figcaption {
 
 @media (max-width: 768px) {
   .medium-large-image {
-    width: 105%; /* Erhöht die Breite auf mobilen Geräten */
-    max-width: none; /* Entfernt die maximale Breite */
+    width: 105%;        /* Breite auf mobilen Geräten erhöhen */
+    max-width: none;     /* Keine maximale Breite */
   }
 }
 
 /* Stil für das Bild vom Arbeitsplatz */
 .workplace-image {
-  width: 60%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+  width: 60%;           /* Breite des Bildes auf 60% des Containers */
+  max-width: 600px;     /* Maxim
 
-/* Responsive Anpassung für kleinere Bildschirme */
-@media (max-width: 768px) {
-  .workplace-image {
-    width: 80%;
-  }
-
-  .sailing-trip-image {
-    width: 80%;
-  }
-}
 
 /* Kontaktformular Stile */
 .contact-form {
@@ -484,11 +478,6 @@ figcaption {
 
 .contact-form button:hover {
   background: #005f8a;
-}
-
-.sailing-trip-image {
-  max-width: 100%; /* Bild behält seine ursprüngliche Größe */
-  height: auto; /* Höhenverhältnis bleibt erhalten */
 }
 
 .toggle-button {
