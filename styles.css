@@ -505,10 +505,11 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  width: 100%; /* Sicherstellen, dass der Footer die gesamte Breite einnimmt */
+  width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
   box-sizing: border-box;
   position: relative;
   bottom: 0;
+  overflow-x: hidden; /* Verhindert seitliches Scrollen */
 }
 
 @media (max-width: 768px) {
@@ -520,6 +521,7 @@ footer {
     font-size: 0.8rem; /* Kleinere Schriftgröße für mobile Geräte */
   }
 }
+
 
 
 
