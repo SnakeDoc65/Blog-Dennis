@@ -525,8 +525,14 @@ figcaption {
   .left-button {
     left: 19px; /* Links nach innen verschieben */
   }
-}
 
+  /* Sicherstellen, dass die Pfeile auf mobilen Geräten richtig dargestellt werden */
+  .right-button::before, 
+  .left-button::before {
+    font-size: 20px; /* Gleiche Größe für mobile Geräte */
+    font-family: Arial, sans-serif; /* Falls die Standard-Schrift nicht geladen wird */
+  }
+}
 
 
 /* Karte */
