@@ -486,12 +486,10 @@ figcaption {
   background: #005f8a;
 }
 
-/* Pfeil-Button für Bilder */
+/* Stil für die Navigation-Buttons */
 .toggle-button {
   position: absolute;
   top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.5);
   border: none;
   padding: 10px;
@@ -504,14 +502,28 @@ figcaption {
   justify-content: center;
 }
 
-.toggle-button:before {
-  content: '→';
-  font-size: 20px;
+#prev-image {
+  left: 10px; /* Position des Zurück-Buttons */
+}
+
+#next-image {
+  right: 10px; /* Position des Weiter-Buttons */
 }
 
 .toggle-button:hover {
   background: rgba(255, 255, 255, 0.8);
 }
+
+/* Stile für das Bild von der Segeltour */
+.sailing-trip-image {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative; /* Relative Positionierung für die Buttons */
+}
+
 
 /* Karte */
 .map-page #map {
