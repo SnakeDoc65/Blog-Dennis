@@ -14,7 +14,6 @@ body {
   width: 100%;
 }
 
-
 /* Header Styles */
 header {
   background: #4a90e2;
@@ -80,8 +79,6 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-
-
 /* Hamburger Menu for Mobile */
 .menu-toggle {
   display: none;
@@ -96,7 +93,7 @@ nav a:hover {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    margin-left: auto;
+    margin-left: -10px; /* Verschiebt den Menü-Button minimal nach links */
   }
 
   nav ul {
@@ -124,8 +121,6 @@ nav a:hover {
   }
 }
 
-
-
 /* Main Content Styles */
 main {
   padding: 80px 20px 20px;
@@ -150,11 +145,26 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
+  width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+  overflow-x: hidden; /* Verhindert seitliches Scrollen */
 }
 
 footer p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 1rem 0.5rem; /* Reduziertes Padding für mobile Geräte */
+  }
+
+  footer p {
+    font-size: 0.8rem; /* Kleinere Schriftgröße für mobile Geräte */
+  }
 }
 
 /* Bildstile */
@@ -403,7 +413,6 @@ figcaption {
   }
 }
 
-
 /* Stil für das Bild vom Arbeitsplatz */
 .workplace-image {
   width: 60%;
@@ -498,30 +507,3 @@ figcaption {
 .toggle-button:hover {
   background: rgba(255, 255, 255, 0.8);
 }
-
-/* Footer Styles */
-footer {
-  background: #4a90e2;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
-  box-sizing: border-box;
-  position: relative;
-  bottom: 0;
-  overflow-x: hidden; /* Verhindert seitliches Scrollen */
-}
-
-@media (max-width: 768px) {
-  footer {
-    padding: 1rem 0.5rem; /* Reduziertes Padding für mobile Geräte */
-  }
-
-  footer p {
-    font-size: 0.8rem; /* Kleinere Schriftgröße für mobile Geräte */
-  }
-}
-
-
-
-
