@@ -75,29 +75,40 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     // Function to toggle mobile menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
-    
-    menuToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('showing');
-    });
-  
-    // Function to toggle image
-    const sailingImage = document.getElementById('sailing-image');
-    const toggleImageButton = document.getElementById('toggle-image');
-    let isOriginal = true;
-    
-    toggleImageButton.addEventListener('click', function() {
-      if (isOriginal) {
-        sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
-        sailingImage.className = 'medium-large-image'; // Setzt die Klasse korrekt
-      } else {
-        sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
-        sailingImage.className = 'sailing-trip-image'; // Setzt die Klasse korrekt
+    // Function to toggle image with error handling
+  const sailingImage = document.getElementById('sailing-image');
+  const toggleImageButton = document.getElementById('toggle-image');
+  let isOriginal = true;
+
+  toggleImageButton.addEventListener('click', function() {
+    if (!sailingImage) {
+      console.error("Image element with id 'sailing-image' not found!");
+      return; // Exit the function if image not found
+    }
+
+    if (isOriginal) {
+      const alternateImagePath = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+      if (!checkImagePath(alternateImagePath)) {
+        console.error("Alternate image path:", alternateImagePath, "not found!");
+        return; // Exit the function if alternate image not found
       }
-      isOriginal = !isOriginal; // Bild umschalten
-    });
+
+      sailingImage.src = alternateImagePath;
+      sailingImage.className = 'medium-large-image'; // Set class correctly
+    } else {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+      sailingImage.className = 'sailing-trip-image'; // Set class correctly
+    }
+    isOriginal = !isOriginal; // Toggle image state
   });
+
+  // Function to check image path existence (optional)
+  function checkImagePath(imagePath) {
+    const image = new Image();
+    image.src = imagePath;
+    return image.complete && image.naturalHeight !== 0;
+  }
+});
   </script>
   
 </body>
