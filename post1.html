@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Internship in Crete, Greece - My Personal Blog</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -42,15 +41,11 @@
         <p>On my last weekend, I joined some people I had met during my stay for an unforgettable sailing trip to the island of Dia. We were on a small sailboat, and despite the rough seas, it was an incredible feeling to ride the waves. Upon arriving at Dia Island, we dropped anchor and had the chance to snorkel in the clear waters, which was also a delightful experience. Afterward, we enjoyed a meal on board and sailed back to Crete during the sunset – truly a once-in-a-lifetime experience.</p>
         
         <!-- Inserted image of the sailing trip with a class for CSS styling -->
-        <!-- Ergänzter Button für das Umschalten des Bildes -->
-<figure>
-  <button id="prev-image" class="toggle-button">&#8592;</button>
-  <img id="sailing-image" src="Pictures/Picture_Crete_Dia_Sailing.jpg" alt="Sailing Trip to Dia Island" class="sailing-trip-image">
-  <figcaption>Our sailing trip to Dia Island</figcaption>
-  <button id="next-image" class="toggle-button">&#8594;</button>
-</figure>
-
-        
+        <figure>
+          <img id="sailing-image" src="Pictures/Picture_Crete_Dia_Sailing.jpg" alt="Sailing Trip to Dia Island" class="sailing-trip-image">
+          <figcaption>Our sailing trip to Dia Island</figcaption>
+          <button id="toggle-image" class="toggle-button"></button> <!-- Button für Pfeil -->
+        </figure>
       </div>
       <section class="comments">
         <h2>Comments</h2>
@@ -77,32 +72,31 @@
 
 <!-- JavaScript to toggle mobile menu and image -->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  // Funktion zum Umschalten des mobilen Menüs
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('nav ul');
+  document.addEventListener('DOMContentLoaded', function () {
+    // Function to toggle mobile menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    
+    menuToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('showing');
+    });
   
-  menuToggle.addEventListener('click', function() {
-    navMenu.classList.toggle('showing');
+    // Function to toggle image
+    const sailingImage = document.getElementById('sailing-image');
+    const toggleImageButton = document.getElementById('toggle-image');
+    let isOriginal = true;
+    
+    toggleImageButton.addEventListener('click', function() {
+      if (isOriginal) {
+        sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+        sailingImage.className = 'medium-large-image'; // Setzt die Klasse korrekt
+      } else {
+        sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+        sailingImage.className = 'sailing-trip-image'; // Setzt die Klasse korrekt
+      }
+      isOriginal = !isOriginal; // Bild umschalten
+    });
   });
-
-  // Funktion zum Umschalten des Bildes
-  const sailingImage = document.getElementById('sailing-image');
-  const toggleImageButton = document.getElementById('toggle-image');
-  let isOriginal = true;
-  
-  toggleImageButton.addEventListener('click', function() {
-    if (isOriginal) {
-      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
-      sailingImage.className = 'medium-large-image'; // Setzt die Klasse korrekt
-    } else {
-      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
-      sailingImage.className = 'sailing-trip-image'; // Setzt die Klasse korrekt
-    }
-    isOriginal = !isOriginal; // Bild umschalten
-  });
-});
-
   </script>
   
 </body>
