@@ -74,28 +74,19 @@
 <!-- JavaScript to toggle mobile menu -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-const toggleButton = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('nav ul');
-toggleButton.addEventListener('click', () => {
-navMenu.classList.toggle('showing');
+  const sailingImage = document.getElementById('sailing-image');
+  const toggleImageButton = document.getElementById('toggle-image');
+  let isOriginal = true;
+
+  toggleImageButton.addEventListener('click', function() {
+    if (isOriginal) {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+    } else {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+    }
+    isOriginal = !isOriginal; // Bild umschalten
+  });
 });
-
-  // Function to toggle image
-const sailingImage = document.getElementById('sailing-image');
-const toggleImageButton = document.getElementById('toggle-image');
-let isOriginal = true;
-
- toggleImageButton.addEventListener('click', function() {
-if (isOriginal) {
- sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
- sailingImage.className = 'medium-large-image'; // Setzt die Klasse korrekt
- } else {
- sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
- sailingImage.className = 'sailing-trip-image'; // Setzt die Klasse korrekt
- }
- isOriginal = !isOriginal; // Bild umschalten
- });
- });
  </script>
 </body>
 </html>
