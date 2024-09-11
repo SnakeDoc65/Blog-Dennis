@@ -486,7 +486,11 @@ figcaption {
   background: #005f8a;
 }
 
-/* Pfeil-Button für Bilder */
+.sailing-trip-image {
+  max-width: 100%; /* Bild behält seine ursprüngliche Größe */
+  height: auto; /* Höhenverhältnis bleibt erhalten */
+}
+
 .toggle-button {
   width: 40px;
   height: 40px;
@@ -513,11 +517,11 @@ figcaption {
 }
 
 .right-button {
-  right: -50px; /* Position the right button */
+  right: -50px; /* Position des rechten Buttons */
 }
 
 .left-button {
-  left: -50px; /* Position the left button */
+  left: -50px; /* Position des linken Buttons */
 }
 
 
