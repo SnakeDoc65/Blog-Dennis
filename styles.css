@@ -395,8 +395,8 @@ figcaption {
 
 /* Stil für das Bild von der Segeltour */
 .sailing-trip-image {
-  width: 50%;           /* Breite des Bildes auf 50% des Containers */
-  max-width: 500px;      /* Maximale Breite */
+  width: 100%;           /* Breite des Bildes auf 50% des Containers */
+  max-width: none;      /* Maximale Breite */
   height: auto;          /* Höhe automatisch, um das Seitenverhältnis zu bewahren */
   display: block;        /* Block-Darstellung, um den margin-Effekt anzuwenden */
   margin: 0 auto;        /* Zentriert das Bild horizontal */
