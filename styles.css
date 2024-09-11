@@ -519,11 +519,11 @@ figcaption {
 /* Anpassungen für mobile Geräte */
 @media (max-width: 768px) {
   .right-button {
-    right: 17px; /* Rechts nach innen verschieben */
+    right: 19px; /* Rechts nach innen verschieben */
   }
 
   .left-button {
-    left: 17px; /* Links nach innen verschieben */
+    left: 19px; /* Links nach innen verschieben */
   }
 }
 
