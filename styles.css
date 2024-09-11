@@ -405,7 +405,7 @@ figcaption {
 /* Responsive Anpassung für kleinere Bildschirme */
 @media (max-width: 768px) {
   .sailing-trip-image {
-    width: 80%;         /* Breite des Bildes auf kleineren Bildschirmen erhöhen */
+    width: 70%;         /* Breite des Bildes auf kleineren Bildschirmen erhöhen */
     max-width: none;     /* Keine maximale Breite auf mobilen Geräten */
   }
 }
