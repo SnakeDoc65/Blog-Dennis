@@ -295,12 +295,7 @@ figcaption {
   }
 }
 
-/* Karte */
-#map {
-  height: 500px;
-  width: 100%;
-  margin: 20px 0;
-}
+
 
 /* Comments Section Styles */
 .comments {
@@ -516,13 +511,13 @@ figcaption {
 }
 
 /* Karte */
-#map {
+.map-page #map {
   height: 500px; /* Standardhöhe */
   width: 100%;   /* Breite auf mobilen Geräten */
   margin: 0;     /* Keine zusätzlichen Margen */
 }
 
-.map-container {
+.map-page .map-container {
   width: 90vw;       /* Breite relativ zur Viewport-Breite */
   max-width: 1200px; /* Maximale Breite für sehr große Bildschirme */
   margin: 20px auto; /* Zentriert den Container horizontal und gibt oben und unten Abstand */
@@ -530,8 +525,9 @@ figcaption {
 
 /* Desktop Styles */
 @media (min-width: 769px) {
-  #map {
+  .map-page #map {
     height: 60vh; /* Höhe relativ zur Viewport-Höhe */
     width: 100%;  /* Breite auf größeren Bildschirmen */
   }
 }
+
