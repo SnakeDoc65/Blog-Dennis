@@ -488,30 +488,38 @@ figcaption {
 
 /* Pfeil-Button für Bilder */
 .toggle-button {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  right: 10px;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  color: gray;
-  z-index: 10;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.toggle-button:before {
-  content: '→';
+.right-button::before {
+  content: '\2192'; /* Right arrow */
   font-size: 20px;
 }
 
-.toggle-button:hover {
-  background: rgba(255, 255, 255, 0.8);
+.left-button::before {
+  content: '\2190'; /* Left arrow */
+  font-size: 20px;
 }
+
+.right-button {
+  right: -50px; /* Position the right button */
+}
+
+.left-button {
+  left: -50px; /* Position the left button */
+}
+
 
 /* Karte */
 .map-page #map {
