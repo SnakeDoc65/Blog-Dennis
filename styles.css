@@ -218,12 +218,12 @@ figcaption {
 }
 
 .post-image {
-  flex: 0 0 220px; /* Standard Breite für kleinere Bildschirme */
-  max-width: 220px; /* Standard Breite für kleinere Bildschirme */
-  height: 160px; /* Standard Höhe für kleinere Bildschirme */
+  flex: 0 0 250px; /* Adjust width as needed */
+  height: 220px; /* Set the exact height */
   object-fit: cover;
   border-radius: 8px;
   margin-right: 20px;
+  margin-bottom: 15px; /* Add margin for spacing below the image */
 }
 
 .post-content {
