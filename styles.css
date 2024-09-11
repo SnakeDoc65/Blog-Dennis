@@ -528,7 +528,7 @@ figcaption {
     height: 60vh;      /* Höhe relativ zur Viewport-Höhe */
     width: 90vw;       /* Breite relativ zur Viewport-Breite */
     max-width: 1200px; /* Maximale Breite für sehr große Bildschirme */
-    margin: 20px 0; /* Zentriert die Karte horizontal */
+    margin: center ; /* Zentriert die Karte horizontal */
   }
 }
 
