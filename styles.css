@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-  background: linear-gradient(to bottom, #4a90e2, #d3d3d3);
+  background: linear-gradient(to bottom, #4a90e2 0%, #4a90e2 70%, #e0e0e0 100%);
   color: #fff;
   padding: 1rem;
   text-align: center;
