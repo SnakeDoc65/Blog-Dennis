@@ -419,7 +419,7 @@ figcaption {
 /* Stil für das Bild vom Arbeitsplatz */
 .workplace-image {
   width: 60%;
-  max-width: 600px;
+  max-width: 510px;
   height: auto;
   display: block;
   margin: 0 auto;
