@@ -151,7 +151,7 @@ p {
 
 /* Footer Styles */
 footer {
-  background: #4a90e2;
+  background: linear-gradient(to top, #4F799B, #355C7D, #1f4068);
   color: #fff;
   text-align: center;
   padding: 1rem;
