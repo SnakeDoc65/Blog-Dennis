@@ -556,3 +556,38 @@ figcaption {
   }
 }
 
+/* Styles for Newsletter Section */
+.newsletter-signup {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-signup h2 {
+  color: #4a90e2;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-signup p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.signup-button {
+  background-color: #007bb5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #005f8a;
+}
