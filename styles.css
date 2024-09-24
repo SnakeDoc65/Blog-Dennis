@@ -162,7 +162,9 @@ footer {
   padding: 1rem;
   width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
   box-sizing: border-box;
+  margin-top: auto; /* Schiebt den Footer nach unten */
 }
+
 
 footer p {
   margin: 0;
