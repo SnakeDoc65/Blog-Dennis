@@ -581,7 +581,7 @@ figcaption {
 }
 
 #mc_embed_signup input[type="email"] {
-  width: 100%; /* Volle Breite des E-Mail-Feldes */
+  width: 90%; /* Volle Breite des E-Mail-Feldes */
   padding: 10px; /* Innenabstand des Eingabefeldes */
   border: 1px solid #ccc; /* Rahmen des Eingabefeldes */
   border-radius: 4px; /* Abgerundete Ecken für das Eingabefeld */
@@ -603,9 +603,9 @@ figcaption {
 }
 
 /* Optional: Stil für kleine Bildschirme */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #mc_embed_shell {
-      padding: 10px; /* Weniger Padding auf kleinen Bildschirmen */
+      padding: 12px; /* Weniger Padding auf kleinen Bildschirmen */
   }
 
   #mc_embed_signup h2 {
