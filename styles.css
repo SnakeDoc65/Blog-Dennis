@@ -436,50 +436,50 @@ figcaption {
 
 /* Kontaktformular Stile */
 .contact-form {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
+  background-color: #ffffff; /* Hintergrundfarbe für das Formular */
+  padding: 20px; /* Innenabstand des Formulars */
+  border-radius: 8px; /* Abgerundete Ecken */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für das Formular */
+  max-width: 600px; /* Maximale Breite des Formulars */
+  margin: 20px auto; /* Zentrierung des Formulars */
 }
 
 .contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
+  display: block; /* Block-Layout für die Labels */
+  margin-bottom: 5px; /* Abstand unter den Labels */
+  font-weight: bold; /* Fettdruck für die Labels */
+  color: #333; /* Textfarbe der Labels */
 }
 
 .contact-form input, 
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  box-sizing: border-box;
+  width: 100%; /* Volle Breite der Eingabefelder */
+  padding: 10px; /* Innenabstand der Eingabefelder */
+  margin-bottom: 10px; /* Abstand unter den Eingabefeldern */
+  border: 1px solid #ccc; /* Rahmen der Eingabefelder */
+  border-radius: 4px; /* Abgerundete Ecken für die Eingabefelder */
+  font-size: 1rem; /* Schriftgröße für die Eingabefelder */
+  box-sizing: border-box; /* Padding und Border in die Breite einrechnen */
 }
 
 .contact-form textarea {
-  resize: vertical;
-  min-height: 150px;
+  resize: vertical; /* Vertikales Resize für das Textfeld */
+  min-height: 150px; /* Minimale Höhe für das Textfeld */
 }
 
 .contact-form button {
-  display: inline-block;
-  background: #4a90e2;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  display: inline-block; /* Block-Layout für den Button */
+  background: #4a90e2; /* Hintergrundfarbe des Buttons */
+  color: #fff; /* Textfarbe im Button */
+  border: none; /* Kein Rahmen für den Button */
+  padding: 10px 20px; /* Innenabstand im Button */
+  cursor: pointer; /* Zeiger bei Hover */
+  border-radius: 4px; /* Abgerundete Ecken für den Button */
+  transition: background-color 0.3s ease; /* Übergangseffekt für Hover */
 }
 
 .contact-form button:hover {
-  background: #005f8a;
+  background: #005f8a; /* Hover-Effekt für den Button */
 }
 
 /* Pfeil-Button für Bilder */
