@@ -621,6 +621,8 @@ figcaption {
 @media (max-width: 500px) {
   #mc_embed_shell {
       padding: 12px; /* Weniger Padding auf kleinen Bildschirmen */
+      max-width: 90%; /* Maximale Breite auf kleinen Bildschirmen anpassen */
+      margin: 20px auto; /* Abstand nach oben und unten und zentrieren */
   }
 
   #mc_embed_signup h2 {
