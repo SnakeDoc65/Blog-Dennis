@@ -1,139 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Internship in Crete, Greece - My Personal Blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Internship in Crete, Greece - My Personal Blog</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div class="container">
-        <h1>My Personal Blog</h1>
-        <button class="menu-toggle">Menu</button>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="archive.html">Archive</a></li>
-                <li><a href="places.html">Places Where I've Been</a></li>
-            </ul>
-        </nav>
-    </div>
+<div class="container">
+ <h1>My Personal Blog</h1>
+ <button class="menu-toggle">Menu</button> <!-- Added menu toggle button -->
+      <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="archive.html">Archive</a></li>
+    <li><a href="places.html">Places Where I've Been</a></li>
+  </ul>
+</nav>
+</div>
 </header>
 <main class="container">
-    <article>
-        <h1 class="internship-title">My Internship in Crete, Greece</h1>
-        <p class="date">Published on: July 10, 2023</p>
-        <div class="content">
-            <p>In early August 2024, after successfully completing my exam as an IT Systems Management Specialist, I decided to undertake a six-week internship in Crete. I came across MD Hellas, a company that operates both as an internship placement and travel agency. They offered me the chance to work in Front-End Web Development, despite my limited prior knowledge in this area. During my internship, I gained extensive insights and learned a lot, including programming this website.</p>
+<article>
+<h1 class="internship-title">My Internship in Crete, Greece</h1>
+ <p class="date">Published on: July 10, 2023</p>
+<div class="content">
+ <p>In early August 2024, after successfully completing my exam as an IT Systems Management Specialist, I decided to undertake a six-week internship in Crete. I came across MD Hellas, a company that operates both as an internship placement and travel agency. They offered me the chance to work in Front-End Web Development, despite my limited prior knowledge in this area. During my internship, I gained extensive insights and learned a lot, including programming this website.</p>
 
-            <p>In my free time, I fully enjoyed the beauty and diversity of Crete. My apartment was located in Amoudara, a district of Heraklion, right by the beach – a setting that provided me with stunning sea views and a relaxing atmosphere. I also met many other Germans who were doing internships, so I always had company for various activities.</p>
+ <p>In my free time, I fully enjoyed the beauty and diversity of Crete. My apartment was located in Amoudara, a district of Heraklion, right by the beach – a setting that provided me with stunning sea views and a relaxing atmosphere. I also met many other Germans who were doing internships, so I always had company for various activities.</p>
 
-            <p>Highlights of my stay included visiting the Heraklion Archaeological Museum, exploring the historic city walls, and admiring the picturesque harbor of Heraklion. With a few people, I rented a car to explore cities like Rethymnon, Chania, and Malia. Particularly impressive was Lake Kournas, the only natural freshwater lake on Crete. The crystal-clear water and the opportunity to rent pedal boats and observe the turtles living in the lake made this excursion an unforgettable experience.</p>
+ <p>Highlights of my stay included visiting the Heraklion Archaeological Museum, exploring the historic city walls, and admiring the picturesque harbor of Heraklion. With a few people, I rented a car to explore cities like Rethymnon, Chania, and Malia. Particularly impressive was Lake Kournas, the only natural freshwater lake on Crete. The crystal-clear water and the opportunity to rent pedal boats and observe the turtles living in the lake made this excursion an unforgettable experience.</p>
+ 
+<figure>
+ <img src="Pictures/Picture_Crete_LakeKournas.jpg" alt="Lake Kournas in Crete" class="medium-large-image">
+ <figcaption>Lake Kournas - The only natural freshwater lake on Crete</figcaption>  </figure>
+ 
+ <p>On my last weekend, I joined some friends I had met during my stay for an unforgettable sailing trip to the island of Dia. We were on a small sailboat, and despite the rough seas, it was an incredible feeling to ride the waves. Upon arriving at Dia Island, we dropped anchor and had the chance to snorkel in the clear waters, which was also a delightful experience. Afterward, we enjoyed a meal on board and sailed back to Crete during the sunset – truly a once-in-a-lifetime experience.</p>
+ 
+ <!-- Inserted image of the sailing trip with a class for CSS styling -->
+ <figure style="position: relative; justify-content: center;">
 
-            <figure>
-                <img src="Pictures/Picture_Crete_LakeKournas.jpg" alt="Lake Kournas in Crete" class="medium-large-image">
-                <figcaption>Lake Kournas - The only natural freshwater lake on Crete</figcaption>
-            </figure>
+  <img id="sailing-image" src="Pictures/Picture_Crete_Dia_Sailing.jpg" alt="Sailing Trip to Dia Island" class="sailing-trip-image">
+  <figcaption>Our sailing trip to Dia Island</figcaption>
+  <button id="toggle-image" class="toggle-button right-button"></button> <!-- Rechter Button -->
+</figure>
 
-            <p>On my last weekend, I joined some friends I had met during my stay for an unforgettable sailing trip to the island of Dia. We were on a small sailboat, and despite the rough seas, it was an incredible feeling to ride the waves. Upon arriving at Dia Island, we dropped anchor and had the chance to snorkel in the clear waters, which was also a delightful experience. Afterward, we enjoyed a meal on board and sailed back to Crete during the sunset – truly a once-in-a-lifetime experience.</p>
 
-            <figure style="position: relative; justify-content: center;">
-                <img id="sailing-image" src="Pictures/Picture_Crete_Dia_Sailing.jpg" alt="Sailing Trip to Dia Island" class="sailing-trip-image">
-                <figcaption>Our sailing trip to Dia Island</figcaption>
-                <button id="toggle-image" class="toggle-button right-button"></button>
-            </figure>
+ <h2>My personal conclusion:</h2>
+  <p>My time in Crete was truly unforgettable. I met wonderful people, explored breathtaking landscapes, and gained valuable experience in web development. Working at MD Hellas was a highlight, as the team's support and camaraderie made learning a joy. The Cretan culture and cuisine were equally enriching, leaving me with cherished memories.</p>
+<section class="comments">
+  <h2>Comments</h2>
+  <form action="submit_comment.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" required></textarea>
+      
+      <button type="submit">Submit Comment</button>
+  </form>
+  <!-- Bereich für bestehende Kommentare -->
+  <div class="comment-list">
+      <!-- Hier werden die bestehenden Kommentare angezeigt -->
+  </div>
+</section>
 
-            <h2>My personal conclusion:</h2>
-            <p>My time in Crete was truly unforgettable. I met wonderful people, explored breathtaking landscapes, and gained valuable experience in web development. Working at MD Hellas was a highlight, as the team's support and camaraderie made learning a joy. The Cretan culture and cuisine were equally enriching, leaving me with cherished memories.</p>
-
-            <section class="comments">
-                <h2>Comments</h2>
-                <form id="comment-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" name="comment" required></textarea>
-
-                    <button type="submit">Submit Comment</button>
-                </form>
-                <div class="comment-list">
-                    <!-- Existing comments will be displayed here -->
-                </div>
-            </section>
-        </div>
-    </article>
+</article>
 </main>
 <footer>
-    <p>&copy; 2024 Dennis Ludley</p>
+<p>&copy; 2024 Dennis Ludley</p>
 </footer>
 
-<!-- JavaScript to toggle mobile menu, image, and submit comments -->
+<!-- JavaScript to toggle mobile menu and image -->
 <script>
-    // Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyA1HZRVQ_i6Ek2ah7qrd1ia2p_q1VJZ_Zo",
-        authDomain: "snakedocgithub.firebaseapp.com",
-        projectId: "snakedocgithub",
-        storageBucket: "snakedocgithub.appspot.com",
-        messagingSenderId: "211064670125",
-        appId: "1:211064670125:web:ddc9c59b613a38e74dc324",
-        measurementId: "G-P8MLJ6YEPC"
-    };
+ document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
 
-    // Initialize Firebase
-    const app = firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
+  toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('showing');
+  });
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const toggleButton = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('nav ul');
+  // Bild umschalten
+  const sailingImage = document.getElementById('sailing-image');
+  const toggleImageButton = document.getElementById('toggle-image');
+  const backButton = document.getElementById('back-button');
+  let isOriginal = true;
 
-        toggleButton.addEventListener('click', () => {
-            navMenu.classList.toggle('showing');
-        });
+  // Event-Listener für den rechten Button (Bild vorwärts)
+  toggleImageButton.addEventListener('click', function() {
+    if (isOriginal) {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+    } else {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+    }
+    isOriginal = !isOriginal; // Bild umschalten
+  });
 
-        // Image toggle
-        const sailingImage = document.getElementById('sailing-image');
-        const toggleImageButton = document.getElementById('toggle-image');
-        let isOriginal = true;
-
-        toggleImageButton.addEventListener('click', function () {
-            if (isOriginal) {
-                sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
-            } else {
-                sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
-            }
-            isOriginal = !isOriginal;
-        });
-
-        // Comment form submission
-        document.getElementById('comment-form').addEventListener('submit', async (event) => {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const comment = document.getElementById('comment').value;
-
-            try {
-                await db.collection("comments").add({
-                    name: name,
-                    comment: comment,
-                });
-                console.log("Comment added!");
-                // Optionally, you can clear the form or refresh the comment list here
-            } catch (e) {
-                console.error("Error adding comment: ", e);
-            }
-        });
-    });
-</script>
+  // Event-Listener für den linken Button (Bild zurück)
+  backButton.addEventListener('click', function() {
+    if (isOriginal) {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing_2.jpg';
+    } else {
+      sailingImage.src = 'Pictures/Picture_Crete_Dia_Sailing.jpg';
+    }
+    isOriginal = !isOriginal; // Bild umschalten
+  });
+});
+  </script>
 </body>
 </html>
