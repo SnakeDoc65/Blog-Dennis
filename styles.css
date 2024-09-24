@@ -585,6 +585,7 @@ figcaption {
   padding: 10px; /* Innenabstand des Eingabefeldes */
   border: 1px solid #ccc; /* Rahmen des Eingabefeldes */
   border-radius: 4px; /* Abgerundete Ecken für das Eingabefeld */
+  box-sizing: border-box; /* Padding und Border in die Breite einrechnen */
 }
 
 #mc_embed_signup .button {
@@ -599,4 +600,15 @@ figcaption {
 
 #mc_embed_signup .button:hover {
   background-color: #45a049; /* Hover-Effekt für den Button */
+}
+
+/* Optional: Stil für kleine Bildschirme */
+@media (max-width: 600px) {
+  #mc_embed_shell {
+      padding: 10px; /* Weniger Padding auf kleinen Bildschirmen */
+  }
+
+  #mc_embed_signup h2 {
+      font-size: 1.5em; /* Schriftgröße für Überschrift anpassen */
+  }
 }
