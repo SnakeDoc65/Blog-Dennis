@@ -211,7 +211,7 @@ figcaption {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Stärkere Schatten für Tiefe */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 80%; /* Standard Breite */
+  max-width: 90%; /* Standard Breite */
   margin-left: auto;
   margin-right: auto;
 }
@@ -291,8 +291,8 @@ p {
 .content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: #000000; /* Schriftfarbe auf Schwarz setzen */
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   .blog-post {
