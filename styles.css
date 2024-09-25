@@ -584,10 +584,14 @@ figcaption {
 }
 
 #mc_embed_signup h2 {
-  font-size: 1.5em; /* Größe des Headers */
-  text-align: center; /* Zentrierter Text für den Header */
-  margin-bottom: 10px; /* Weniger Abstand zum unteren Rand */
+  font-family: 'Poppins', sans-serif; /* Moderne Schriftart */
+  font-size: 1.8em; /* Größere Schriftgröße für mehr Präsenz */
+  font-weight: 600; /* Fett für den Titel */
+  text-align: center; /* Zentrierter Text */
+  color: #333; /* Dunklere Farbe für besseren Kontrast */
+  margin-bottom: 15px; /* Abstand zum unteren Rand */
 }
+
 
 #mc_embed_signup .mc-field-group {
   margin-bottom: 8px; /* Noch weniger Abstand zwischen den Eingabefeldern */
