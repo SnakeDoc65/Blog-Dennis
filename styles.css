@@ -1,21 +1,21 @@
 /* Global Styles */
-/* Body Styles */
+/* Global Styles */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #000; /* Schriftfarbe auf Schwarz geändert */
   background-image: url('Pictures/Background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   line-height: 1.6;
   box-sizing: border-box;
-  overflow-x: hidden; /* Vermeidet seitliches Scrollen */
+  overflow-x: hidden;
   width: 100%;
-  min-height: 100vh; /* Stellt sicher, dass der Body mindestens die volle Höhe des Viewports hat */
-  display: flex; /* Flexbox für die Anordnung der Elemente */
-  flex-direction: column; /* Vertikale Anordnung */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Styles */
@@ -38,8 +38,7 @@ header .container {
 }
 
 header h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem; /* Desktop Fontgröße */
+  font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
   margin: 0;
@@ -48,7 +47,7 @@ header h1 {
 /* Media Query für mobile Geräte */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 1.8rem; /* Kleinere Fontgröße für mobile Geräte */
+    font-size: 1.8rem;
   }
 }
 
@@ -92,13 +91,13 @@ nav a:hover {
   padding: 10px;
   font-size: 1rem;
   cursor: pointer;
-  z-index: 1000; /* Hoher Z-Index, damit der Button oben liegt */
+  z-index: 1000;
 }
 
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    margin-left: -9px; /* Verschiebt den Menü-Button minimal nach links */
+    margin-left: -9px;
   }
 
   nav ul {
@@ -109,7 +108,7 @@ nav a:hover {
     position: absolute;
     top: 60px;
     left: 0;
-    z-index: 999; /* Z-Index für das Dropdown-Menü */
+    z-index: 999;
   }
 
   nav ul.showing {
@@ -127,30 +126,23 @@ nav a:hover {
   }
 }
 
-
 /* Main Content Styles */
 main {
-  padding: 40px 20px 20px; /* Reduziertes Padding oben für Desktop */
+  padding: 40px 20px 20px;
   max-width: 800px;
   margin: 0 auto;
-  flex: 1; /* Ermöglicht dem Main-Bereich, den verfügbaren Platz einzunehmen */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  main {
-    padding: 20px 20px 20px; /* Reduziertes Padding oben für mobile Geräte */
-  }
+  flex: 1;
 }
 
 h2 {
   color: #4a90e2;
-  font-size: 2rem;
+  font-size: 2.5rem; /* Vergrößerte Schriftgröße für h2 */
   margin-bottom: 20px;
+  text-align: center; /* Zentrierter Titel */
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Schriftgröße etwas größer */
   margin-bottom: 20px;
 }
 
@@ -160,26 +152,31 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
+  width: 100%;
   box-sizing: border-box;
-  margin-top: auto; /* Schiebt den Footer nach unten */
+  margin-top: auto;
 }
-
 
 footer p {
   margin: 0;
   font-size: 0.9rem;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
-  footer {
-    padding: 1rem 0.5rem; /* Reduziertes Padding für mobile Geräte */
+  main {
+    padding: 20px 20px 20px;
   }
 
-  footer p {
-    font-size: 0.8rem; /* Kleinere Schriftgröße für mobile Geräte */
+  h2 {
+    font-size: 2rem; /* Kleinere Schriftgröße für mobile Geräte */
+  }
+
+  p {
+    font-size: 1rem; /* Kleinere Schriftgröße für mobile Geräte */
   }
 }
+
 
 /* Bildstile */
 figure {
