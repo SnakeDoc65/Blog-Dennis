@@ -291,8 +291,8 @@ p {
 .content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #000000; /* Schriftfarbe auf Schwarz setzen */
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .blog-post {
