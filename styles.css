@@ -570,11 +570,10 @@ figcaption {
     width: 100%;  /* Breite auf größeren Bildschirmen */
   }
 }
-
 /* Mailchimp */
 #mc_embed_shell {
-  margin-top: 0px; /* Kein Abstand nach oben, um es direkt unter dem Header zu platzieren */
-  padding: 5px 10px; /* Noch weniger Innenabstand für eine geringere Höhe */
+  margin-top: 10px; /* Minimaler Abstand nach oben, um etwas Platz unter dem Header zu lassen */
+  padding: 5px 10px; /* Weniger Innenabstand für eine geringere Höhe */
   background-color: #f9f9f9; /* Hintergrundfarbe für das Formular */
   border: 1px solid #ccc; /* Optionaler Rahmen */
   border-radius: 8px; /* Abgerundete Ecken */
