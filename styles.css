@@ -206,10 +206,10 @@ figcaption {
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
-  background: #fff;
-  padding: 30px;
+  background: #ffffff;
+  padding: 20px; /* Weniger Padding für einen moderneren Look */
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Stärkere Schatten für Tiefe */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 80%; /* Standard Breite */
   margin-left: auto;
@@ -217,14 +217,14 @@ figcaption {
 }
 
 .blog-post:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Tieferer Schatten bei Hover */
 }
 
 .post-image {
-  flex: 0 0 220px; /* Standard Breite für kleinere Bildschirme */
-  max-width: 220px; /* Standard Breite für kleinere Bildschirme */
-  height: 160px; /* Standard Höhe für kleinere Bildschirme */
+  flex: 0 0 300px; /* Breite für größere Bilder */
+  max-width: 100%; /* Vermeidet Überlauf */
+  height: 200px; /* Angepasste Höhe */
   object-fit: cover;
   border-radius: 8px;
   margin-right: 20px;
@@ -234,39 +234,50 @@ figcaption {
   flex: 1;
 }
 
-/* Desktop Styles */
-@media (min-width: 769px) {
-  .blog-post {
-    max-width: 90%; /* Breiterer Container für größere Bildschirme */
-    padding: 40px; /* Erhöhte Polsterung für Desktop */
-  }
-
-  .post-image {
-    flex: 0 0 350px; /* Vergrößerte Breite für Desktop */
-    max-width: 350px; /* Vergrößerte Breite für Desktop */
-    height: 250px; /* Vergrößerte Höhe für Desktop */
-    align-self: center; /* Zentriert das Bild vertikal im Container */
-  }
+h2 {
+  color: #2c3e50; /* Dunklerer Farbton für bessere Lesbarkeit */
+  font-size: 2rem;
+  margin-bottom: 10px; /* Weniger Abstand zwischen Titel und Text */
+  font-weight: bold; /* Fettere Schrift für mehr Sichtbarkeit */
+  transition: color 0.3s ease; /* Übergangseffekt für Farbe */
 }
 
+h2 a {
+  text-decoration: none; /* Entfernen der Unterstreichung */
+  color: inherit; /* Erbt die Farbe von h2 */
+}
+
+h2 a:hover {
+  color: #3498db; /* Farbe beim Hover */
+}
+
+p {
+  font-size: 1.1rem; /* Kleinere Schriftgröße für den Text */
+  margin-bottom: 15px;
+  color: #7f8c8d; /* Grauer Farbton für den Text */
+  line-height: 1.5; /* Bessere Lesbarkeit */
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   .blog-post {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+      flex-direction: column; /* Bei kleinen Bildschirmen untereinander anordnen */
+      align-items: center; /* Zentrieren */
+      text-align: center; /* Text zentrieren */
   }
 
   .post-image {
-    margin-right: 0;
-    margin-bottom: 15px;
-    width: 100%;
-    height: auto;
+      margin-right: 0; /* Entfernen des rechten Margins */
+      margin-bottom: 15px; /* Abstand nach unten */
+      width: 100%; /* Bildbreite anpassen */
+      height: auto; /* Höhe automatisch anpassen */
   }
 
   .post-content {
-    width: 100%;
+      width: 100%; /* Inhalt anpassen */
   }
 }
+
 
 .internship-title {
   color: #4a90e2;
