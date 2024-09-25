@@ -222,16 +222,16 @@ figcaption {
 }
 
 .post-image {
-  flex: 0 0 300px; /* Breite für größere Bilder */
-  max-width: 100%; /* Vermeidet Überlauf */
-  height: 200px; /* Angepasste Höhe */
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 20px;
+  flex: 1; /* Bild nimmt den verfügbaren Platz ein */
+  max-width: none; /* Keine maximale Breite */
+  height: auto; /* Höhe automatisch anpassen */
+  object-fit: cover; /* Bild wird skaliert, um den Container zu füllen */
+  border-radius: 12px; /* Gleicher Radius wie für das Container */
+  margin-right: 20px; /* Abstand zum Inhalt */
 }
 
 .post-content {
-  flex: 1;
+  flex: 1; /* Inhalt nimmt den verbleibenden Platz ein */
 }
 
 h2 {
@@ -270,14 +270,14 @@ p {
       margin-right: 0; /* Entfernen des rechten Margins */
       margin-bottom: 15px; /* Abstand nach unten */
       width: 100%; /* Bildbreite anpassen */
-      height: auto; /* Höhe automatisch anpassen */
+      height: 300px; /* Angepasste Höhe für Mobil */
+      object-fit: cover; /* Bild wird skaliert, um den Container zu füllen */
   }
 
   .post-content {
       width: 100%; /* Inhalt anpassen */
   }
 }
-
 
 .internship-title {
   color: #4a90e2;
@@ -305,13 +305,14 @@ p {
     margin-right: 0;
     margin-bottom: 15px;
     width: 100%;
-    height: auto;
+    height: auto; /* Höhe automatisch anpassen */
   }
 
   .post-content {
     width: 100%;
   }
 }
+
 
 
 
